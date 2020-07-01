@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_gl.c" "/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/glad_gl.c.o"
-  "/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests/tearing.c" "/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests/CMakeFiles/tearing.dir/tearing.c.o"
+  "/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_gl.c" "/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/glad_gl.c.o"
+  "/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests/tearing.c" "/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests/CMakeFiles/tearing.dir/tearing.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
@@ -17,7 +17,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

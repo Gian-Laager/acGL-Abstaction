@@ -3,6 +3,11 @@
 
 #include "pch.h"
 
-void hello();
+#include "Renderer.h"
+
+namespace glAbs
+{
+    void hello_GL();
+}
 
 #endif //GL_ABSTRACTION_ACGL_ABSTRACTION_H

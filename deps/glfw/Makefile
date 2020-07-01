@@ -68,10 +68,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw
+CMAKE_SOURCE_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw
+CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -146,9 +146,9 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

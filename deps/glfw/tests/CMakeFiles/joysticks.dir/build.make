@@ -63,10 +63,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw
+CMAKE_SOURCE_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw
+CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/joysticks.dir/depend.make
@@ -79,29 +79,29 @@ include tests/CMakeFiles/joysticks.dir/flags.make
 
 tests/CMakeFiles/joysticks.dir/joysticks.c.o: tests/CMakeFiles/joysticks.dir/flags.make
 tests/CMakeFiles/joysticks.dir/joysticks.c.o: tests/joysticks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/joysticks.dir/joysticks.c.o"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/joysticks.dir/joysticks.c.o   -c /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests/joysticks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/joysticks.dir/joysticks.c.o"
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/joysticks.dir/joysticks.c.o   -c /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests/joysticks.c
 
 tests/CMakeFiles/joysticks.dir/joysticks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/joysticks.dir/joysticks.c.i"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests/joysticks.c > CMakeFiles/joysticks.dir/joysticks.c.i
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests/joysticks.c > CMakeFiles/joysticks.dir/joysticks.c.i
 
 tests/CMakeFiles/joysticks.dir/joysticks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/joysticks.dir/joysticks.c.s"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests/joysticks.c -o CMakeFiles/joysticks.dir/joysticks.c.s
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests/joysticks.c -o CMakeFiles/joysticks.dir/joysticks.c.s
 
 tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o: tests/CMakeFiles/joysticks.dir/flags.make
 tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o: deps/glad_gl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o   -c /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o"
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o   -c /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_gl.c
 
 tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/joysticks.dir/__/deps/glad_gl.c.i"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_gl.c > CMakeFiles/joysticks.dir/__/deps/glad_gl.c.i
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_gl.c > CMakeFiles/joysticks.dir/__/deps/glad_gl.c.i
 
 tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/joysticks.dir/__/deps/glad_gl.c.s"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_gl.c -o CMakeFiles/joysticks.dir/__/deps/glad_gl.c.s
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_gl.c -o CMakeFiles/joysticks.dir/__/deps/glad_gl.c.s
 
 # Object files for target joysticks
 joysticks_OBJECTS = \
@@ -114,10 +114,10 @@ joysticks_EXTERNAL_OBJECTS =
 tests/joysticks.app/Contents/MacOS/joysticks: tests/CMakeFiles/joysticks.dir/joysticks.c.o
 tests/joysticks.app/Contents/MacOS/joysticks: tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o
 tests/joysticks.app/Contents/MacOS/joysticks: tests/CMakeFiles/joysticks.dir/build.make
-tests/joysticks.app/Contents/MacOS/joysticks: src/libglfw3.a
+tests/joysticks.app/Contents/MacOS/joysticks: src/libglfw.3.3.dylib
 tests/joysticks.app/Contents/MacOS/joysticks: tests/CMakeFiles/joysticks.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable joysticks.app/Contents/MacOS/joysticks"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/joysticks.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable joysticks.app/Contents/MacOS/joysticks"
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/joysticks.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/joysticks.dir/build: tests/joysticks.app/Contents/MacOS/joysticks
@@ -125,10 +125,10 @@ tests/CMakeFiles/joysticks.dir/build: tests/joysticks.app/Contents/MacOS/joystic
 .PHONY : tests/CMakeFiles/joysticks.dir/build
 
 tests/CMakeFiles/joysticks.dir/clean:
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && $(CMAKE_COMMAND) -P CMakeFiles/joysticks.dir/cmake_clean.cmake
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && $(CMAKE_COMMAND) -P CMakeFiles/joysticks.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/joysticks.dir/clean
 
 tests/CMakeFiles/joysticks.dir/depend:
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests/CMakeFiles/joysticks.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests/CMakeFiles/joysticks.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/joysticks.dir/depend
 

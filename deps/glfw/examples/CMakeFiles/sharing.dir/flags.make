@@ -6,5 +6,5 @@ C_FLAGS =  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps -I/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/include 
+C_INCLUDES = -I/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps -I/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/include 
 

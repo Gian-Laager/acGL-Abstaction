@@ -63,10 +63,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw
+CMAKE_SOURCE_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw
+CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw
 
 # Utility rule file for uninstall.
 
@@ -74,7 +74,7 @@ CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/d
 include CMakeFiles/uninstall.dir/progress.make
 
 CMakeFiles/uninstall:
-	/Applications/CMake.app/Contents/bin/cmake -P /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/cmake_uninstall.cmake
+	/Applications/CMake.app/Contents/bin/cmake -P /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/cmake_uninstall.cmake
 
 uninstall: CMakeFiles/uninstall
 uninstall: CMakeFiles/uninstall.dir/build.make
@@ -91,6 +91,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

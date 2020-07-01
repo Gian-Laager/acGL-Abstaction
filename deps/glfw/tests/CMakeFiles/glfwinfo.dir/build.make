@@ -63,10 +63,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw
+CMAKE_SOURCE_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw
+CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/glfwinfo.dir/depend.make
@@ -79,55 +79,55 @@ include tests/CMakeFiles/glfwinfo.dir/flags.make
 
 tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o: tests/CMakeFiles/glfwinfo.dir/flags.make
 tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o: tests/glfwinfo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfwinfo.dir/glfwinfo.c.o   -c /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests/glfwinfo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o"
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfwinfo.dir/glfwinfo.c.o   -c /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests/glfwinfo.c
 
 tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfwinfo.dir/glfwinfo.c.i"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests/glfwinfo.c > CMakeFiles/glfwinfo.dir/glfwinfo.c.i
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests/glfwinfo.c > CMakeFiles/glfwinfo.dir/glfwinfo.c.i
 
 tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfwinfo.dir/glfwinfo.c.s"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests/glfwinfo.c -o CMakeFiles/glfwinfo.dir/glfwinfo.c.s
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests/glfwinfo.c -o CMakeFiles/glfwinfo.dir/glfwinfo.c.s
 
 tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o: tests/CMakeFiles/glfwinfo.dir/flags.make
 tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o: deps/getopt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o   -c /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/getopt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o"
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o   -c /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/getopt.c
 
 tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfwinfo.dir/__/deps/getopt.c.i"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/getopt.c > CMakeFiles/glfwinfo.dir/__/deps/getopt.c.i
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/getopt.c > CMakeFiles/glfwinfo.dir/__/deps/getopt.c.i
 
 tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfwinfo.dir/__/deps/getopt.c.s"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/getopt.c -o CMakeFiles/glfwinfo.dir/__/deps/getopt.c.s
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/getopt.c -o CMakeFiles/glfwinfo.dir/__/deps/getopt.c.s
 
 tests/CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.o: tests/CMakeFiles/glfwinfo.dir/flags.make
 tests/CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.o: deps/glad_gl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object tests/CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.o"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.o   -c /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object tests/CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.o"
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.o   -c /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_gl.c
 
 tests/CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.i"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_gl.c > CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.i
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_gl.c > CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.i
 
 tests/CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.s"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_gl.c -o CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.s
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_gl.c -o CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.s
 
 tests/CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.o: tests/CMakeFiles/glfwinfo.dir/flags.make
 tests/CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.o: deps/glad_vulkan.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object tests/CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.o"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.o   -c /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_vulkan.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object tests/CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.o"
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.o   -c /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_vulkan.c
 
 tests/CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.i"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_vulkan.c > CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.i
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_vulkan.c > CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.i
 
 tests/CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.s"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_vulkan.c -o CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.s
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_vulkan.c -o CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.s
 
 # Object files for target glfwinfo
 glfwinfo_OBJECTS = \
@@ -144,10 +144,10 @@ tests/glfwinfo: tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o
 tests/glfwinfo: tests/CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.o
 tests/glfwinfo: tests/CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.o
 tests/glfwinfo: tests/CMakeFiles/glfwinfo.dir/build.make
-tests/glfwinfo: src/libglfw3.a
+tests/glfwinfo: src/libglfw.3.3.dylib
 tests/glfwinfo: tests/CMakeFiles/glfwinfo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable glfwinfo"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfwinfo.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable glfwinfo"
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfwinfo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/glfwinfo.dir/build: tests/glfwinfo
@@ -155,10 +155,10 @@ tests/CMakeFiles/glfwinfo.dir/build: tests/glfwinfo
 .PHONY : tests/CMakeFiles/glfwinfo.dir/build
 
 tests/CMakeFiles/glfwinfo.dir/clean:
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests && $(CMAKE_COMMAND) -P CMakeFiles/glfwinfo.dir/cmake_clean.cmake
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests && $(CMAKE_COMMAND) -P CMakeFiles/glfwinfo.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/glfwinfo.dir/clean
 
 tests/CMakeFiles/glfwinfo.dir/depend:
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests/CMakeFiles/glfwinfo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests/CMakeFiles/glfwinfo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/glfwinfo.dir/depend
 

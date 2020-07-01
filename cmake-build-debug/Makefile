@@ -184,6 +184,276 @@ cmake_pch.hxx.s:
 	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.s
 .PHONY : cmake_pch.hxx.s
 
+deps/stb/stb_image.o: deps/stb/stb_image.cpp.o
+
+.PHONY : deps/stb/stb_image.o
+
+# target to build an object file
+deps/stb/stb_image.cpp.o:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o
+.PHONY : deps/stb/stb_image.cpp.o
+
+deps/stb/stb_image.i: deps/stb/stb_image.cpp.i
+
+.PHONY : deps/stb/stb_image.i
+
+# target to preprocess a source file
+deps/stb/stb_image.cpp.i:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.i
+.PHONY : deps/stb/stb_image.cpp.i
+
+deps/stb/stb_image.s: deps/stb/stb_image.cpp.s
+
+.PHONY : deps/stb/stb_image.s
+
+# target to generate assembly for a file
+deps/stb/stb_image.cpp.s:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.s
+.PHONY : deps/stb/stb_image.cpp.s
+
+src/Buffer.o: src/Buffer.cpp.o
+
+.PHONY : src/Buffer.o
+
+# target to build an object file
+src/Buffer.cpp.o:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Buffer.cpp.o
+.PHONY : src/Buffer.cpp.o
+
+src/Buffer.i: src/Buffer.cpp.i
+
+.PHONY : src/Buffer.i
+
+# target to preprocess a source file
+src/Buffer.cpp.i:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Buffer.cpp.i
+.PHONY : src/Buffer.cpp.i
+
+src/Buffer.s: src/Buffer.cpp.s
+
+.PHONY : src/Buffer.s
+
+# target to generate assembly for a file
+src/Buffer.cpp.s:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Buffer.cpp.s
+.PHONY : src/Buffer.cpp.s
+
+src/IndexBuffer.o: src/IndexBuffer.cpp.o
+
+.PHONY : src/IndexBuffer.o
+
+# target to build an object file
+src/IndexBuffer.cpp.o:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/IndexBuffer.cpp.o
+.PHONY : src/IndexBuffer.cpp.o
+
+src/IndexBuffer.i: src/IndexBuffer.cpp.i
+
+.PHONY : src/IndexBuffer.i
+
+# target to preprocess a source file
+src/IndexBuffer.cpp.i:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/IndexBuffer.cpp.i
+.PHONY : src/IndexBuffer.cpp.i
+
+src/IndexBuffer.s: src/IndexBuffer.cpp.s
+
+.PHONY : src/IndexBuffer.s
+
+# target to generate assembly for a file
+src/IndexBuffer.cpp.s:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/IndexBuffer.cpp.s
+.PHONY : src/IndexBuffer.cpp.s
+
+src/Renderer.o: src/Renderer.cpp.o
+
+.PHONY : src/Renderer.o
+
+# target to build an object file
+src/Renderer.cpp.o:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Renderer.cpp.o
+.PHONY : src/Renderer.cpp.o
+
+src/Renderer.i: src/Renderer.cpp.i
+
+.PHONY : src/Renderer.i
+
+# target to preprocess a source file
+src/Renderer.cpp.i:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Renderer.cpp.i
+.PHONY : src/Renderer.cpp.i
+
+src/Renderer.s: src/Renderer.cpp.s
+
+.PHONY : src/Renderer.s
+
+# target to generate assembly for a file
+src/Renderer.cpp.s:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Renderer.cpp.s
+.PHONY : src/Renderer.cpp.s
+
+src/Shader.o: src/Shader.cpp.o
+
+.PHONY : src/Shader.o
+
+# target to build an object file
+src/Shader.cpp.o:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Shader.cpp.o
+.PHONY : src/Shader.cpp.o
+
+src/Shader.i: src/Shader.cpp.i
+
+.PHONY : src/Shader.i
+
+# target to preprocess a source file
+src/Shader.cpp.i:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Shader.cpp.i
+.PHONY : src/Shader.cpp.i
+
+src/Shader.s: src/Shader.cpp.s
+
+.PHONY : src/Shader.s
+
+# target to generate assembly for a file
+src/Shader.cpp.s:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Shader.cpp.s
+.PHONY : src/Shader.cpp.s
+
+src/Texture.o: src/Texture.cpp.o
+
+.PHONY : src/Texture.o
+
+# target to build an object file
+src/Texture.cpp.o:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Texture.cpp.o
+.PHONY : src/Texture.cpp.o
+
+src/Texture.i: src/Texture.cpp.i
+
+.PHONY : src/Texture.i
+
+# target to preprocess a source file
+src/Texture.cpp.i:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Texture.cpp.i
+.PHONY : src/Texture.cpp.i
+
+src/Texture.s: src/Texture.cpp.s
+
+.PHONY : src/Texture.s
+
+# target to generate assembly for a file
+src/Texture.cpp.s:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Texture.cpp.s
+.PHONY : src/Texture.cpp.s
+
+src/VertexArray.o: src/VertexArray.cpp.o
+
+.PHONY : src/VertexArray.o
+
+# target to build an object file
+src/VertexArray.cpp.o:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexArray.cpp.o
+.PHONY : src/VertexArray.cpp.o
+
+src/VertexArray.i: src/VertexArray.cpp.i
+
+.PHONY : src/VertexArray.i
+
+# target to preprocess a source file
+src/VertexArray.cpp.i:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexArray.cpp.i
+.PHONY : src/VertexArray.cpp.i
+
+src/VertexArray.s: src/VertexArray.cpp.s
+
+.PHONY : src/VertexArray.s
+
+# target to generate assembly for a file
+src/VertexArray.cpp.s:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexArray.cpp.s
+.PHONY : src/VertexArray.cpp.s
+
+src/VertexBuffer.o: src/VertexBuffer.cpp.o
+
+.PHONY : src/VertexBuffer.o
+
+# target to build an object file
+src/VertexBuffer.cpp.o:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexBuffer.cpp.o
+.PHONY : src/VertexBuffer.cpp.o
+
+src/VertexBuffer.i: src/VertexBuffer.cpp.i
+
+.PHONY : src/VertexBuffer.i
+
+# target to preprocess a source file
+src/VertexBuffer.cpp.i:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexBuffer.cpp.i
+.PHONY : src/VertexBuffer.cpp.i
+
+src/VertexBuffer.s: src/VertexBuffer.cpp.s
+
+.PHONY : src/VertexBuffer.s
+
+# target to generate assembly for a file
+src/VertexBuffer.cpp.s:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexBuffer.cpp.s
+.PHONY : src/VertexBuffer.cpp.s
+
+src/VertexBufferLayout.o: src/VertexBufferLayout.cpp.o
+
+.PHONY : src/VertexBufferLayout.o
+
+# target to build an object file
+src/VertexBufferLayout.cpp.o:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexBufferLayout.cpp.o
+.PHONY : src/VertexBufferLayout.cpp.o
+
+src/VertexBufferLayout.i: src/VertexBufferLayout.cpp.i
+
+.PHONY : src/VertexBufferLayout.i
+
+# target to preprocess a source file
+src/VertexBufferLayout.cpp.i:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexBufferLayout.cpp.i
+.PHONY : src/VertexBufferLayout.cpp.i
+
+src/VertexBufferLayout.s: src/VertexBufferLayout.cpp.s
+
+.PHONY : src/VertexBufferLayout.s
+
+# target to generate assembly for a file
+src/VertexBufferLayout.cpp.s:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexBufferLayout.cpp.s
+.PHONY : src/VertexBufferLayout.cpp.s
+
+src/Window.o: src/Window.cpp.o
+
+.PHONY : src/Window.o
+
+# target to build an object file
+src/Window.cpp.o:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Window.cpp.o
+.PHONY : src/Window.cpp.o
+
+src/Window.i: src/Window.cpp.i
+
+.PHONY : src/Window.i
+
+# target to preprocess a source file
+src/Window.cpp.i:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Window.cpp.i
+.PHONY : src/Window.cpp.i
+
+src/Window.s: src/Window.cpp.s
+
+.PHONY : src/Window.s
+
+# target to generate assembly for a file
+src/Window.cpp.s:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Window.cpp.s
+.PHONY : src/Window.cpp.s
+
 src/acGL_Abstraction.o: src/acGL_Abstraction.cpp.o
 
 .PHONY : src/acGL_Abstraction.o
@@ -227,6 +497,36 @@ help:
 	@echo "... cmake_pch.hxx.pch"
 	@echo "... cmake_pch.hxx.i"
 	@echo "... cmake_pch.hxx.s"
+	@echo "... deps/stb/stb_image.o"
+	@echo "... deps/stb/stb_image.i"
+	@echo "... deps/stb/stb_image.s"
+	@echo "... src/Buffer.o"
+	@echo "... src/Buffer.i"
+	@echo "... src/Buffer.s"
+	@echo "... src/IndexBuffer.o"
+	@echo "... src/IndexBuffer.i"
+	@echo "... src/IndexBuffer.s"
+	@echo "... src/Renderer.o"
+	@echo "... src/Renderer.i"
+	@echo "... src/Renderer.s"
+	@echo "... src/Shader.o"
+	@echo "... src/Shader.i"
+	@echo "... src/Shader.s"
+	@echo "... src/Texture.o"
+	@echo "... src/Texture.i"
+	@echo "... src/Texture.s"
+	@echo "... src/VertexArray.o"
+	@echo "... src/VertexArray.i"
+	@echo "... src/VertexArray.s"
+	@echo "... src/VertexBuffer.o"
+	@echo "... src/VertexBuffer.i"
+	@echo "... src/VertexBuffer.s"
+	@echo "... src/VertexBufferLayout.o"
+	@echo "... src/VertexBufferLayout.i"
+	@echo "... src/VertexBufferLayout.s"
+	@echo "... src/Window.o"
+	@echo "... src/Window.i"
+	@echo "... src/Window.s"
 	@echo "... src/acGL_Abstraction.o"
 	@echo "... src/acGL_Abstraction.i"
 	@echo "... src/acGL_Abstraction.s"

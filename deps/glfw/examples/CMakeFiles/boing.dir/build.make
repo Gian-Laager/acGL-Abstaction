@@ -63,10 +63,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw
+CMAKE_SOURCE_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw
+CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw
 
 # Include any dependencies generated for this target.
 include examples/CMakeFiles/boing.dir/depend.make
@@ -79,33 +79,33 @@ include examples/CMakeFiles/boing.dir/flags.make
 
 examples/boing.app/Contents/Resources/glfw.icns: examples/glfw.icns
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Copying OS X content examples/boing.app/Contents/Resources/glfw.icns"
-	$(CMAKE_COMMAND) -E copy /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples/glfw.icns examples/boing.app/Contents/Resources/glfw.icns
+	$(CMAKE_COMMAND) -E copy /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples/glfw.icns examples/boing.app/Contents/Resources/glfw.icns
 
 examples/CMakeFiles/boing.dir/boing.c.o: examples/CMakeFiles/boing.dir/flags.make
 examples/CMakeFiles/boing.dir/boing.c.o: examples/boing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/boing.dir/boing.c.o"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/boing.dir/boing.c.o   -c /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples/boing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/boing.dir/boing.c.o"
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/boing.dir/boing.c.o   -c /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples/boing.c
 
 examples/CMakeFiles/boing.dir/boing.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/boing.dir/boing.c.i"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples/boing.c > CMakeFiles/boing.dir/boing.c.i
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples/boing.c > CMakeFiles/boing.dir/boing.c.i
 
 examples/CMakeFiles/boing.dir/boing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/boing.dir/boing.c.s"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples/boing.c -o CMakeFiles/boing.dir/boing.c.s
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples/boing.c -o CMakeFiles/boing.dir/boing.c.s
 
 examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o: examples/CMakeFiles/boing.dir/flags.make
 examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o: deps/glad_gl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/boing.dir/__/deps/glad_gl.c.o   -c /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o"
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/boing.dir/__/deps/glad_gl.c.o   -c /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_gl.c
 
 examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/boing.dir/__/deps/glad_gl.c.i"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_gl.c > CMakeFiles/boing.dir/__/deps/glad_gl.c.i
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_gl.c > CMakeFiles/boing.dir/__/deps/glad_gl.c.i
 
 examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/boing.dir/__/deps/glad_gl.c.s"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_gl.c -o CMakeFiles/boing.dir/__/deps/glad_gl.c.s
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_gl.c -o CMakeFiles/boing.dir/__/deps/glad_gl.c.s
 
 # Object files for target boing
 boing_OBJECTS = \
@@ -118,10 +118,10 @@ boing_EXTERNAL_OBJECTS =
 examples/boing.app/Contents/MacOS/boing: examples/CMakeFiles/boing.dir/boing.c.o
 examples/boing.app/Contents/MacOS/boing: examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o
 examples/boing.app/Contents/MacOS/boing: examples/CMakeFiles/boing.dir/build.make
-examples/boing.app/Contents/MacOS/boing: src/libglfw3.a
+examples/boing.app/Contents/MacOS/boing: src/libglfw.3.3.dylib
 examples/boing.app/Contents/MacOS/boing: examples/CMakeFiles/boing.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable boing.app/Contents/MacOS/boing"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/boing.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable boing.app/Contents/MacOS/boing"
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/boing.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/CMakeFiles/boing.dir/build: examples/boing.app/Contents/MacOS/boing
@@ -130,10 +130,10 @@ examples/CMakeFiles/boing.dir/build: examples/boing.app/Contents/Resources/glfw.
 .PHONY : examples/CMakeFiles/boing.dir/build
 
 examples/CMakeFiles/boing.dir/clean:
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples && $(CMAKE_COMMAND) -P CMakeFiles/boing.dir/cmake_clean.cmake
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples && $(CMAKE_COMMAND) -P CMakeFiles/boing.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/boing.dir/clean
 
 examples/CMakeFiles/boing.dir/depend:
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples/CMakeFiles/boing.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples/CMakeFiles/boing.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/CMakeFiles/boing.dir/depend
 

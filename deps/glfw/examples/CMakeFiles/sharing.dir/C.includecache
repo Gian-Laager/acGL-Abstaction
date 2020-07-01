@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_gl.c
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_gl.c
 stdio.h
 -
 stdlib.h
@@ -16,7 +16,7 @@ string.h
 glad/gl.h
 -
 
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples/sharing.c
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples/sharing.c
 glad/gl.h
 -
 GLFW/glfw3.h
@@ -26,9 +26,9 @@ stdio.h
 stdlib.h
 -
 getopt.h
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples/getopt.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples/getopt.h
 linmath.h
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples/linmath.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples/linmath.h
 
 deps/getopt.h
 

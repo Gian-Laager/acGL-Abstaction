@@ -1,4 +1,4 @@
-# Install script for directory: /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests
+# Install script for directory: /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

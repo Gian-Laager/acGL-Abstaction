@@ -63,10 +63,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw
+CMAKE_SOURCE_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw
+CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw
 
 # Include any dependencies generated for this target.
 include examples/CMakeFiles/offscreen.dir/depend.make
@@ -79,29 +79,29 @@ include examples/CMakeFiles/offscreen.dir/flags.make
 
 examples/CMakeFiles/offscreen.dir/offscreen.c.o: examples/CMakeFiles/offscreen.dir/flags.make
 examples/CMakeFiles/offscreen.dir/offscreen.c.o: examples/offscreen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/offscreen.dir/offscreen.c.o"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/offscreen.dir/offscreen.c.o   -c /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples/offscreen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/offscreen.dir/offscreen.c.o"
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/offscreen.dir/offscreen.c.o   -c /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples/offscreen.c
 
 examples/CMakeFiles/offscreen.dir/offscreen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/offscreen.dir/offscreen.c.i"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples/offscreen.c > CMakeFiles/offscreen.dir/offscreen.c.i
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples/offscreen.c > CMakeFiles/offscreen.dir/offscreen.c.i
 
 examples/CMakeFiles/offscreen.dir/offscreen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/offscreen.dir/offscreen.c.s"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples/offscreen.c -o CMakeFiles/offscreen.dir/offscreen.c.s
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples/offscreen.c -o CMakeFiles/offscreen.dir/offscreen.c.s
 
 examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o: examples/CMakeFiles/offscreen.dir/flags.make
 examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o: deps/glad_gl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o   -c /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o"
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o   -c /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_gl.c
 
 examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/offscreen.dir/__/deps/glad_gl.c.i"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_gl.c > CMakeFiles/offscreen.dir/__/deps/glad_gl.c.i
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_gl.c > CMakeFiles/offscreen.dir/__/deps/glad_gl.c.i
 
 examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/offscreen.dir/__/deps/glad_gl.c.s"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_gl.c -o CMakeFiles/offscreen.dir/__/deps/glad_gl.c.s
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_gl.c -o CMakeFiles/offscreen.dir/__/deps/glad_gl.c.s
 
 # Object files for target offscreen
 offscreen_OBJECTS = \
@@ -114,10 +114,10 @@ offscreen_EXTERNAL_OBJECTS =
 examples/offscreen: examples/CMakeFiles/offscreen.dir/offscreen.c.o
 examples/offscreen: examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o
 examples/offscreen: examples/CMakeFiles/offscreen.dir/build.make
-examples/offscreen: src/libglfw3.a
+examples/offscreen: src/libglfw.3.3.dylib
 examples/offscreen: examples/CMakeFiles/offscreen.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable offscreen"
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/offscreen.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable offscreen"
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/offscreen.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/CMakeFiles/offscreen.dir/build: examples/offscreen
@@ -125,10 +125,10 @@ examples/CMakeFiles/offscreen.dir/build: examples/offscreen
 .PHONY : examples/CMakeFiles/offscreen.dir/build
 
 examples/CMakeFiles/offscreen.dir/clean:
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples && $(CMAKE_COMMAND) -P CMakeFiles/offscreen.dir/cmake_clean.cmake
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples && $(CMAKE_COMMAND) -P CMakeFiles/offscreen.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/offscreen.dir/clean
 
 examples/CMakeFiles/offscreen.dir/depend:
-	cd /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples /Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/examples/CMakeFiles/offscreen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/examples/CMakeFiles/offscreen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/CMakeFiles/offscreen.dir/depend
 

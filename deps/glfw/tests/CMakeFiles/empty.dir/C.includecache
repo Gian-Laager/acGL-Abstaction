@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_gl.c
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_gl.c
 stdio.h
 -
 stdlib.h
@@ -16,9 +16,9 @@ string.h
 glad/gl.h
 -
 
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/tinycthread.c
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/tinycthread.c
 tinycthread.h
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/tinycthread.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/tinycthread.h
 stdlib.h
 -
 signal.h
@@ -36,7 +36,7 @@ process.h
 sys/timeb.h
 -
 
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/tinycthread.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/tinycthread.h
 time.h
 -
 sys/time.h
@@ -46,9 +46,9 @@ pthread.h
 windows.h
 -
 
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests/empty.c
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests/empty.c
 tinycthread.h
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests/tinycthread.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests/tinycthread.h
 glad/gl.h
 -
 GLFW/glfw3.h

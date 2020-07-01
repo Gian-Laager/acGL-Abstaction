@@ -14,8 +14,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/glfw.dir/posix_thread.c.o"
   "CMakeFiles/glfw.dir/vulkan.c.o"
   "CMakeFiles/glfw.dir/window.c.o"
-  "libglfw3.a"
-  "libglfw3.pdb"
+  "libglfw.3.3.dylib"
+  "libglfw.3.dylib"
+  "libglfw.dylib"
+  "libglfw.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/getopt.c
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/getopt.c
 getopt.h
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/getopt.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/getopt.h
 stddef.h
 -
 string.h
 -
 
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/getopt.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/getopt.h
 
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_gl.c
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_gl.c
 stdio.h
 -
 stdlib.h
@@ -26,7 +26,7 @@ string.h
 glad/gl.h
 -
 
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/deps/glad_vulkan.c
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/deps/glad_vulkan.c
 stdio.h
 -
 stdlib.h
@@ -36,7 +36,7 @@ string.h
 glad/vulkan.h
 -
 
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests/glfwinfo.c
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests/glfwinfo.c
 glad/gl.h
 -
 glad/vulkan.h
@@ -50,7 +50,7 @@ stdlib.h
 string.h
 -
 getopt.h
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glfw/tests/getopt.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/glfw/tests/getopt.h
 
 deps/getopt.h
 
