@@ -1,0 +1,8 @@
+#ifndef GL_ABSTRACTION_ACGL_ABSTRACTION_H
+#define GL_ABSTRACTION_ACGL_ABSTRACTION_H
+
+#include "pch.h"
+
+void hello();
+
+#endif //GL_ABSTRACTION_ACGL_ABSTRACTION_H

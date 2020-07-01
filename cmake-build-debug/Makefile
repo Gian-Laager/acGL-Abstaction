@@ -56,6 +56,52 @@ CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Absta
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -111,44 +157,59 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named GL_Abstraction
+# Target rules for targets named acGL_Abstraction
 
 # Build rule for target.
-GL_Abstraction: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 GL_Abstraction
-.PHONY : GL_Abstraction
+acGL_Abstraction: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 acGL_Abstraction
+.PHONY : acGL_Abstraction
 
 # fast build rule for target.
-GL_Abstraction/fast:
-	$(MAKE) -f CMakeFiles/GL_Abstraction.dir/build.make CMakeFiles/GL_Abstraction.dir/build
-.PHONY : GL_Abstraction/fast
-
-library.o: library.cpp.o
-
-.PHONY : library.o
+acGL_Abstraction/fast:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/build
+.PHONY : acGL_Abstraction/fast
 
 # target to build an object file
-library.cpp.o:
-	$(MAKE) -f CMakeFiles/GL_Abstraction.dir/build.make CMakeFiles/GL_Abstraction.dir/library.cpp.o
-.PHONY : library.cpp.o
-
-library.i: library.cpp.i
-
-.PHONY : library.i
+cmake_pch.hxx.pch:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch
+.PHONY : cmake_pch.hxx.pch
 
 # target to preprocess a source file
-library.cpp.i:
-	$(MAKE) -f CMakeFiles/GL_Abstraction.dir/build.make CMakeFiles/GL_Abstraction.dir/library.cpp.i
-.PHONY : library.cpp.i
-
-library.s: library.cpp.s
-
-.PHONY : library.s
+cmake_pch.hxx.i:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.i
+.PHONY : cmake_pch.hxx.i
 
 # target to generate assembly for a file
-library.cpp.s:
-	$(MAKE) -f CMakeFiles/GL_Abstraction.dir/build.make CMakeFiles/GL_Abstraction.dir/library.cpp.s
-.PHONY : library.cpp.s
+cmake_pch.hxx.s:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.s
+.PHONY : cmake_pch.hxx.s
+
+src/acGL_Abstraction.o: src/acGL_Abstraction.cpp.o
+
+.PHONY : src/acGL_Abstraction.o
+
+# target to build an object file
+src/acGL_Abstraction.cpp.o:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o
+.PHONY : src/acGL_Abstraction.cpp.o
+
+src/acGL_Abstraction.i: src/acGL_Abstraction.cpp.i
+
+.PHONY : src/acGL_Abstraction.i
+
+# target to preprocess a source file
+src/acGL_Abstraction.cpp.i:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.i
+.PHONY : src/acGL_Abstraction.cpp.i
+
+src/acGL_Abstraction.s: src/acGL_Abstraction.cpp.s
+
+.PHONY : src/acGL_Abstraction.s
+
+# target to generate assembly for a file
+src/acGL_Abstraction.cpp.s:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.s
+.PHONY : src/acGL_Abstraction.cpp.s
 
 # Help Target
 help:
@@ -156,12 +217,19 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... GL_Abstraction"
-	@echo "... library.o"
-	@echo "... library.i"
-	@echo "... library.s"
+	@echo "... acGL_Abstraction"
+	@echo "... cmake_pch.hxx.pch"
+	@echo "... cmake_pch.hxx.i"
+	@echo "... cmake_pch.hxx.s"
+	@echo "... src/acGL_Abstraction.o"
+	@echo "... src/acGL_Abstraction.i"
+	@echo "... src/acGL_Abstraction.s"
 .PHONY : help
 
 
