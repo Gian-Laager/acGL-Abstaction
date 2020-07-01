@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction
 -- The C compiler identification is AppleClang 11.0.3.11030032
 -- The CXX compiler identification is AppleClang 11.0.3.11030032
 -- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
@@ -16,4 +16,4 @@
 -- Found OpenGL: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework   
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-debug
+-- Build files have been written to: /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-release

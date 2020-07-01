@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/GL-Abstraction.iml" filepath="$PROJECT_DIR$/.idea/GL-Abstraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/acGL-Abstraction_.iml" filepath="$PROJECT_DIR$/.idea/acGL-Abstraction_.iml" />
     </modules>
   </component>
 </project>
