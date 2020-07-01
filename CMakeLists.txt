@@ -25,6 +25,7 @@ set(SRC_FILES
         ${acGL_Abstraction_ROOT_DIR}/src/Shader.cpp
         ${acGL_Abstraction_ROOT_DIR}/src/Buffer.cpp
         ${acGL_Abstraction_ROOT_DIR}/src/Texture.cpp
+        ${acGL_Abstraction_ROOT_DIR}/src/Window.cpp
 
         #Dependencies
         ${acGL_Abstraction_ROOT_DIR}/deps/stb/stb_image.cpp
@@ -43,6 +44,7 @@ set(HEAD_FILES
         ${acGL_Abstraction_ROOT_DIR}/include/VertexBufferLayout.h
         ${acGL_Abstraction_ROOT_DIR}/include/Buffer.h
         ${acGL_Abstraction_ROOT_DIR}/include/Texture.h
+        ${acGL_Abstraction_ROOT_DIR}/include/Window.h
 
         #Dependencies
         ${acGL_Abstraction_ROOT_DIR}/deps/stb/stb_image.h
