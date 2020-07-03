@@ -2606,6 +2606,7 @@ CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../include/Texture.h
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../include/VertexArray.h
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../include/VertexBuffer.h
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../include/VertexBufferLayout.h
+CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../include/Window.h
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../include/acGL_Abstraction.h
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../include/pch.h
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx

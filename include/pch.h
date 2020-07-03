@@ -6,7 +6,7 @@
 ////open gl error handling
 #define glCall(x) GLErrorHandling::clearError();\
     x;\
-    assert(GLErrorHandling::logCall(#x, __FILE__, __LINE__));
+    assert(GLErrorHandling::logCall(#x, __FILE__, __LINE__))
 
 namespace glAbs::GLErrorHandling
 {
@@ -38,5 +38,6 @@ namespace glAbs::GLErrorHandling
 #include <vector>
 #include <set>
 #include <array>
+#include <future>
 
 #endif //ACGL_ABSTRACTION_PCH_H

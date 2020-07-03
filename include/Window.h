@@ -11,44 +11,64 @@ namespace glAbs
 {
     struct WindowHint
     {
-        int hint, value;
+        int hint, * value;
+
+        ~WindowHint();
     };
 
     struct glfwWindowSettings
     {
-        unsigned int dimensions = 2;
-        int width = 640;
-        int height = 480;
-        const char* title = "title";
+        glfwWindowSettings();
 
-        int majorContextVersion = 4;
-        int minorContextVersion = 1;
-        std::vector<WindowHint> windowHints = {
-                WindowHint{GLFW_CONTEXT_VERSION_MAJOR, majorContextVersion},
-                WindowHint{GLFW_CONTEXT_VERSION_MINOR, minorContextVersion},
-                WindowHint{GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE},
-                WindowHint{GLFW_OPENGL_FORWARD_COMPAT, true}
-        };
+        ~glfwWindowSettings();
 
-        GLFWmonitor* monitor = nullptr;
-        GLFWwindow* share = nullptr;
+        glfwWindowSettings(glfwWindowSettings&& settings) noexcept;
 
-        bool runMainLoopInParallel = true;
+        unsigned int dimensions;
+        int width;
+        int height;
+        const char* title;
+
+        int* majorContextVersion;
+        int* minorContextVersion;
+        std::vector<WindowHint> windowHints;
+
+        GLFWmonitor* monitor;
+        GLFWwindow* share;
+
+        bool runMainLoopInParallel;
+
+        GLbitfield clearMask;
+        bool callSwapInterval;
+        int swapInterval;
+        glm::vec4 clearColor;
     };
 
     class Window
     {
     private:
+        static bool glfwInitialized;
+        static bool glewInitialized;
         GLFWwindow* glfwWindow;
+        std::function<void()> setup;
         std::function<void()> mainloop;
+        std::function<void()> callback;
         glfwWindowSettings settings;
+        std::future<void> mainLoopFuture;
 
     public:
-        GLbitfield clearMask = GL_COLOR_BUFFER_BIT;
+        bool showWindow = true;
 
-        Window(std::function<void()> mainloop, std::function<void()> callback = []{}, glfwWindowSettings settings = glfwWindowSettings());
+        Window(std::function<void()> setup, std::function<void()> mainloop, std::function<void()> callback = [] {},
+               glfwWindowSettings settings = glfwWindowSettings());
+
+        ~Window();
+
+        void runMainLoop();
+
+        Window(Window&& window) noexcept;
+
+        std::future<void>& getMainLoopFuture() const;
     };
 }
-
-
 #endif //ACGL_ABSTRACTION_WINDOW_H
