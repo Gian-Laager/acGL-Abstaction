@@ -17,6 +17,7 @@ namespace glAbs
         std::shared_ptr<int> value;
 
         WindowHint(WindowHint&& hint) noexcept;
+
         WindowHint(const WindowHint& hint) noexcept;
     };
 
@@ -25,6 +26,7 @@ namespace glAbs
         glfwWindowSettings();
 
         glfwWindowSettings(glfwWindowSettings&& settings) noexcept;
+
         glfwWindowSettings(const glfwWindowSettings& settings) noexcept;
 
         unsigned int dimensions;
@@ -32,9 +34,9 @@ namespace glAbs
         int height;
         std::string title;
 
-        std::shared_ptr<int> majorContextVersion;
-        std::shared_ptr<int> minorContextVersion;
-        std::vector<WindowHint> windowHints;
+//        std::shared_ptr<int> majorContextVersion;
+//        std::shared_ptr<int> minorContextVersion;
+//        std::vector<WindowHint> windowHints;
 
         GLFWmonitor* monitor;
         GLFWwindow* share;
@@ -42,27 +44,26 @@ namespace glAbs
 //        bool runMainLoopInParallel;
 
         GLbitfield clearMask;
-        bool callSwapInterval;
-        int swapInterval;
         glm::vec4 clearColor;
     };
 
     class Window
     {
-    private:
+    public:
         std::function<void()> setup;
         std::function<void()> mainloop;
         std::function<void()> callback;
         glfwWindowSettings settings;
+
+    protected:
         GLFWwindow* glfwWindow;
         std::future<void> mainLoopFuture;
 
     public:
-        static bool glfwInitialized;
-        static bool glewInitialized;
         bool showWindow;
 
-        Window(std::function<void()> setup, std::function<void()> mainloop, std::function<void()> callback = [] {},
+        Window(std::function<void()> mainloop, std::function<void()> setup = [] {},
+               std::function<void()> callback = [] {},
                glfwWindowSettings settings = glfwWindowSettings());
 
         void runMainLoop();
@@ -70,6 +71,38 @@ namespace glAbs
         Window(Window&& window) noexcept;
 
         const std::future<void>* getMainLoopFuture() const;
+    };
+
+    struct MainWindowSettings : public glfwWindowSettings
+    {
+    private:
+        static MainWindowSettings* instance;
+
+        MainWindowSettings();
+
+    public:
+        static MainWindowSettings* getInstance();
+
+        std::shared_ptr<int> majorContextVersion;
+        std::shared_ptr<int> minorContextVersion;
+        std::vector<glAbs::WindowHint> windowHints;
+        bool callSwapInterval;
+        int swapInterval;
+
+        friend glAbs::Destroyer::~Destroyer();
+    };
+
+    class MainWindow : public Window
+    {
+    private:
+        static MainWindow* instance;
+
+        MainWindow();
+
+    public:
+        static MainWindow* getInstance();
+
+        friend glAbs::Destroyer::~Destroyer();
     };
 }
 #endif //ACGL_ABSTRACTION_WINDOW_H

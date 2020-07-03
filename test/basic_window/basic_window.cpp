@@ -2,7 +2,8 @@
 
 int main()
 {
-    GlAbs_Init();
+//    glAbs::MainWindowSettings::getInstance()->
+    glAbs_Init();
     glAbs::hello_GL();
     return 0;
 }

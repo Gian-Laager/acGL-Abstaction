@@ -4,15 +4,16 @@
 #include "pch.h"
 
 #include "Renderer.h"
+#include "Window.h"
 
 namespace glAbs
 {
-    void hello_GL();
+    MainWindow* mainWindow;
 
-    struct Destroyer
-    {
-        ~Destroyer();
-    };
+    bool glfwInitialized = false;
+    bool glewInitialized = false;
+
+    void hello_GL();
 
     glAbs::Destroyer init();
 }

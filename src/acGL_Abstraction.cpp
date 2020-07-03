@@ -1,7 +1,5 @@
 #include "acGL_Abstraction.h"
 
-#include "Window.h"
-
 void glAbs::GLErrorHandling::clearError()
 {
     while (glGetError() != GL_NO_ERROR);
@@ -35,7 +33,7 @@ void glAbs::hello_GL()
     glfwWindowSettings settings;
 //    settings.runMainLoopInParallel = true;
 
-    Window window([&]() {
+    mainWindow->setup = [&] {
         const char* versionGL;
         glCall(versionGL = (char*) (glGetString(GL_VERSION)));
         std::cout << "openGl version: " << versionGL << std::endl;
@@ -55,11 +53,14 @@ void glAbs::hello_GL()
         shader = new Shader("../../../res/shaders/basic2dShader.glsl");
 
         renderer = new Renderer(vertexBuffer, positionLayout, 1, shader);
-    }, [&renderer]() {
-        renderer->draw(3);
-    }, []() { std::cout << "mainloop finished" << std::endl; }, settings);
+    };
 
-    window.runMainLoop();
+    mainWindow->mainloop = [&renderer] {
+        renderer->draw(3);
+    };
+    mainWindow->callback = [] { std::cout << "mainloop finished" << std::endl; };
+
+    mainWindow->runMainLoop();
 
 //    window.getMainLoopFuture()->wait();
 }
@@ -67,20 +68,35 @@ void glAbs::hello_GL()
 glAbs::Destroyer::~Destroyer()
 {
     glfwTerminate();
-    std::cout << "destructor of destroyer called";
+    delete glAbs::MainWindow::getInstance();
+    delete glAbs::MainWindowSettings::getInstance();
+    glAbs::MainWindowSettings::instance = nullptr;
+    glAbs::MainWindow::instance = nullptr;
 }
 
 glAbs::Destroyer glAbs::init()
 {
     //TODO: implement this function to initialize every thing
-//    throw "not implemented";
 
-//    if (!glAbs::Window::glfwInitialized)
-//    {
-//        if (!glfwInit())
-//            throw "Failed to initialize GLFW";
-//        glAbs::Window::glfwInitialized = true;
-//    }
+    if (!glAbs::glfwInitialized)
+    {
+        if (!glfwInit())
+            throw "Failed to initialize GLFW";
+        glAbs::glfwInitialized = true;
+    }
+
+    for (auto& windowHint : glAbs::MainWindowSettings::getInstance()->windowHints)
+        glfwWindowHint(windowHint.hint, *windowHint.value);
+
+    mainWindow = glAbs::MainWindow::getInstance();
+
+
+    if (!glAbs::glewInitialized)
+    {
+        glewExperimental = true;
+        if (GLEW_OK != glewInit())
+            throw "Failed to initialize glew";
+    }
 
     return glAbs::Destroyer(); //when the main function ends the destructor of Destroyer gets called and glfw get terminated
 }
