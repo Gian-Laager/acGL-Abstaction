@@ -2,6 +2,7 @@
 
 int main()
 {
+    GlAbs_Init();
     glAbs::hello_GL();
     return 0;
 }

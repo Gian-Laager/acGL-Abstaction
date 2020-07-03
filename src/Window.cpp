@@ -8,6 +8,7 @@ glAbs::Window::Window(std::function<void()> setup, std::function<void()> mainloo
                                                      mainloop(std::move(mainloop)),
                                                      callback(std::move(callback)),
                                                      settings(std::move(settings)),
+                                                     glfwWindow(nullptr),
                                                      showWindow(true)
 {
     if (!glAbs::Window::glfwInitialized)
@@ -20,9 +21,8 @@ glAbs::Window::Window(std::function<void()> setup, std::function<void()> mainloo
     for (auto& windowHint : this->settings.windowHints)
         glfwWindowHint(windowHint.hint, *windowHint.value);
 
-    glfwWindow =
-            glfwCreateWindow(this->settings.width, this->settings.height, &this->settings.title[0],
-                             this->settings.monitor, this->settings.share);
+    glfwWindow = glfwCreateWindow(this->settings.width, this->settings.height, &this->settings.title[0],
+                                  this->settings.monitor, this->settings.share);
 
     if (!glfwWindow)
     {
@@ -46,36 +46,40 @@ glAbs::Window::Window(std::function<void()> setup, std::function<void()> mainloo
 
 void glAbs::Window::runMainLoop()
 {
-    if (settings.runMainLoopInParallel)
+    //TODO: Implement this if statement to run the main loop in parallel
+//    if (settings.runMainLoopInParallel)
+//    {
+//        mainLoopFuture = std::async(std::launch::async, [&]() {
+//            glfwMakeContextCurrent(glfwWindow);
+//
+//            setup();
+//
+//            while (!glfwWindowShouldClose(glfwWindow) && showWindow)
+//            {
+//                std::cout << "main loop started" << std::endl;
+//                glCall(glClearColor(settings.clearColor.x, settings.clearColor.y, settings.clearColor.z,
+//                                    settings.clearColor.w));
+//                glCall(glClear(settings.clearMask));
+//
+//                mainloop();
+//
+//                glfwSwapBuffers(glfwWindow);
+//                glfwPollEvents();
+//                std::cout << "end of main loop" << std::endl;
+//            }
+//
+//            callback();
+//        });
+//    } else
     {
-        mainLoopFuture = std::async(std::launch::async, [&]() {
-            glfwMakeContextCurrent(glfwWindow);
-
-            setup();
-
-            while (!glfwWindowShouldClose(glfwWindow) && showWindow)
-            {
-                glCall(glClearColor(settings.clearColor.x, settings.clearColor.y, settings.clearColor.z,
-                                    settings.clearColor.w));
-                glCall(glClear(settings.clearMask));
-
-                mainloop();
-
-                glfwSwapBuffers(glfwWindow);
-                glfwPollEvents();
-            }
-
-            callback();
-            glfwTerminate();
-        });
-    } else
-    {
+        mainLoopFuture = std::async(std::launch::async, []() {});
         glfwMakeContextCurrent(glfwWindow);
 
         setup();
 
         while (!glfwWindowShouldClose(glfwWindow) && showWindow)
         {
+            std::cout << "main loop started" << std::endl;
             glCall(glClearColor(settings.clearColor.x, settings.clearColor.y, settings.clearColor.z,
                                 settings.clearColor.w));
             glCall(glClear(settings.clearMask));
@@ -84,30 +88,22 @@ void glAbs::Window::runMainLoop()
 
             glfwSwapBuffers(glfwWindow);
             glfwPollEvents();
+            std::cout << "end of main loop" << std::endl;
         }
 
         callback();
-        glfwTerminate();
     }
 }
 
 glAbs::Window::Window(glAbs::Window&& window) noexcept: setup(std::move(window.setup)),
                                                         mainloop(std::move(window.mainloop)),
                                                         callback(std::move(window.callback)),
-                                                        settings(std::move(window.settings))
-{
-    glfwWindow = window.glfwWindow;
-    window.glfwWindow = nullptr;
-}
+                                                        settings(std::move(window.settings)),
+                                                        showWindow(window.showWindow) {}
 
-const std::future<void>& glAbs::Window::getMainLoopFuture() const
+const std::future<void>* glAbs::Window::getMainLoopFuture() const
 {
-    return (std::future<void>&) mainLoopFuture;
-}
-
-glAbs::Window::~Window()
-{
-    delete glfwWindow;
+    return &mainLoopFuture;
 }
 
 glAbs::glfwWindowSettings::glfwWindowSettings(glAbs::glfwWindowSettings&& settings) noexcept: dimensions(
@@ -124,12 +120,8 @@ glAbs::glfwWindowSettings::glfwWindowSettings(glAbs::glfwWindowSettings&& settin
                                                                                                               settings.minorContextVersion)),
                                                                                               windowHints(std::move(
                                                                                                       settings.windowHints)),
-                                                                                              monitor(std::move(
-                                                                                                      settings.monitor)),
-                                                                                              share(std::move(
-                                                                                                      settings.share)),
-                                                                                              runMainLoopInParallel(
-                                                                                                      settings.runMainLoopInParallel),
+//                                                                                              runMainLoopInParallel(
+//                                                                                                      settings.runMainLoopInParallel),
                                                                                               clearMask(
                                                                                                       settings.clearMask),
                                                                                               callSwapInterval(
@@ -139,6 +131,10 @@ glAbs::glfwWindowSettings::glfwWindowSettings(glAbs::glfwWindowSettings&& settin
                                                                                               clearColor(
                                                                                                       settings.clearColor)
 {
+    monitor = settings.monitor;
+    settings.monitor = nullptr;
+    share = settings.share;
+    settings.share = nullptr;
 }
 
 glAbs::glfwWindowSettings::glfwWindowSettings() : dimensions(2),
@@ -155,7 +151,7 @@ glAbs::glfwWindowSettings::glfwWindowSettings() : dimensions(2),
                                                           WindowHint{GLFW_OPENGL_FORWARD_COMPAT, std::make_shared<int>(true)})*/),
                                                   monitor(nullptr),
                                                   share(nullptr),
-                                                  runMainLoopInParallel(true),
+//                                                  runMainLoopInParallel(true),
                                                   clearMask(GL_COLOR_BUFFER_BIT),
                                                   callSwapInterval(true),
                                                   swapInterval(1),
@@ -184,15 +180,25 @@ glAbs::glfwWindowSettings::glfwWindowSettings(const glAbs::glfwWindowSettings& s
                                                                                                                    *settings.minorContextVersion)),
                                                                                                    windowHints(
                                                                                                            settings.windowHints),
+                                                                                                   monitor(settings.monitor),
+                                                                                                   share(settings.share),
+//                                                                                                   runMainLoopInParallel(
+//                                                                                                           settings.runMainLoopInParallel),
+                                                                                                   clearMask(
+                                                                                                           settings.clearMask),
+                                                                                                   callSwapInterval(
+                                                                                                           settings.callSwapInterval),
+                                                                                                   swapInterval(
+                                                                                                           settings.swapInterval),
+                                                                                                   clearColor(
+                                                                                                           settings.clearColor) {}
 
-
-)
-{
-    moni
-}
 
 glAbs::WindowHint::WindowHint(glAbs::WindowHint&& hint) noexcept: hint(hint.hint),
                                                                   value(std::move(hint.value)) {}
 
 glAbs::WindowHint::WindowHint(int hint, std::shared_ptr<int> value) : hint(hint),
                                                                       value(std::move(value)) {}
+
+glAbs::WindowHint::WindowHint(const glAbs::WindowHint& hint) noexcept: hint(hint.hint),
+                                                                       value(std::make_shared<int>(*hint.value)) {}

@@ -17,6 +17,7 @@ namespace glAbs
         std::shared_ptr<int> value;
 
         WindowHint(WindowHint&& hint) noexcept;
+        WindowHint(const WindowHint& hint) noexcept;
     };
 
     struct glfwWindowSettings
@@ -38,7 +39,7 @@ namespace glAbs
         GLFWmonitor* monitor;
         GLFWwindow* share;
 
-        bool runMainLoopInParallel;
+//        bool runMainLoopInParallel;
 
         GLbitfield clearMask;
         bool callSwapInterval;
@@ -49,8 +50,6 @@ namespace glAbs
     class Window
     {
     private:
-        static bool glfwInitialized;
-        static bool glewInitialized;
         std::function<void()> setup;
         std::function<void()> mainloop;
         std::function<void()> callback;
@@ -59,18 +58,18 @@ namespace glAbs
         std::future<void> mainLoopFuture;
 
     public:
+        static bool glfwInitialized;
+        static bool glewInitialized;
         bool showWindow;
 
         Window(std::function<void()> setup, std::function<void()> mainloop, std::function<void()> callback = [] {},
                glfwWindowSettings settings = glfwWindowSettings());
 
-        ~Window();
-
         void runMainLoop();
 
         Window(Window&& window) noexcept;
 
-        const std::future<void>& getMainLoopFuture() const;
+        const std::future<void>* getMainLoopFuture() const;
     };
 }
 #endif //ACGL_ABSTRACTION_WINDOW_H

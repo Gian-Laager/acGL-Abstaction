@@ -9,7 +9,12 @@ namespace glAbs
 {
     void hello_GL();
 
-    void init();
+    struct Destroyer
+    {
+        ~Destroyer();
+    };
+
+    glAbs::Destroyer init();
 }
 
 #endif //GL_ABSTRACTION_ACGL_ABSTRACTION_H

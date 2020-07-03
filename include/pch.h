@@ -15,6 +15,10 @@ namespace glAbs::GLErrorHandling
     bool logCall(const char* function, const char* file, int line);
 }
 
+////macros
+#define GlAbs_Init() auto destructor = glAbs::init();\
+
+
 ////including dependencies
 #include "GL/glew.h"
 #include "GLFW/glfw3.h"

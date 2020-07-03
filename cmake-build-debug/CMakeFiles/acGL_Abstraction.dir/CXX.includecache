@@ -1691,6 +1691,8 @@ array
 -
 future
 -
+memory
+-
 
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-debug/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/pch.h
@@ -1772,6 +1774,8 @@ set
 array
 -
 future
+-
+memory
 -
 
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Buffer.cpp

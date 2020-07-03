@@ -27,52 +27,19 @@ void glAbs::hello_GL()
         float x, y;
     };
 
-//    GLFWwindow* window;
-//
-//    if (!glfwInit())
-//    {
-//        throw "Failed to initialize GLFW";
-//    }
-//
-//    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-//    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
-//    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-//    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, true);
-//
-//    /* Create a windowed mode window and its OpenGL context */
-//    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
-//    if (!window)
-//    {
-//        glfwTerminate();
-//        throw "Failed to create window";
-//    }
-//
-//    /* Make the window's context current */
-//    glfwMakeContextCurrent(window);
-//    glfwSwapInterval(1);
-//
-//
-//    glewExperimental = true;
-//    if (GLEW_OK != glewInit())
-//    {
-//        throw "Failed to initialize glew";
-//    }
-
-//    VertexArray* vertexArray;
     Shader* shader;
     Renderer* renderer;
     VertexBufferLayout* positionLayout;
     VertexBuffer* vertexBuffer;
 
     glfwWindowSettings settings;
-    settings.runMainLoopInParallel = false;
+//    settings.runMainLoopInParallel = true;
 
     Window window([&]() {
         const char* versionGL;
         glCall(versionGL = (char*) (glGetString(GL_VERSION)));
         std::cout << "openGl version: " << versionGL << std::endl;
 
-//        vertexArray = new VertexArray();
         vertexBuffer = new VertexBuffer();
 
         Vertex vb_data[] = {
@@ -85,40 +52,35 @@ void glAbs::hello_GL()
 
         positionLayout = new VertexBufferLayout(0, 2, GL_FLOAT, false, sizeof(Vertex), nullptr);
 
-//        vertexArray->push(&vertexBuffer, &positionLayout, 1);
-
         shader = new Shader("../../../res/shaders/basic2dShader.glsl");
 
         renderer = new Renderer(vertexBuffer, positionLayout, 1, shader);
-    }, [&]() {
+    }, [&renderer]() {
         renderer->draw(3);
     }, []() { std::cout << "mainloop finished" << std::endl; }, settings);
 
     window.runMainLoop();
 
-    window.getMainLoopFuture().wait();
-
-//    /* Loop until the user closes the window */
-//    while (!glfwWindowShouldClose(window))
-//    {
-//        /* Render here */
-//        glClear(GL_COLOR_BUFFER_BIT);
-//        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-//
-//        renderer.draw(3, GL_TRIANGLES);
-//
-//        /* Swap front and back buffers */
-//        glfwSwapBuffers(window);
-//
-//        /* Poll for and process events */
-//        glfwPollEvents();
-//    }
-//
-//    glfwTerminate();
+//    window.getMainLoopFuture()->wait();
 }
 
-void init()
+glAbs::Destroyer::~Destroyer()
+{
+    glfwTerminate();
+    std::cout << "destructor of destroyer called";
+}
+
+glAbs::Destroyer glAbs::init()
 {
     //TODO: implement this function to initialize every thing
-    throw "not implemented";
+//    throw "not implemented";
+
+//    if (!glAbs::Window::glfwInitialized)
+//    {
+//        if (!glfwInit())
+//            throw "Failed to initialize GLFW";
+//        glAbs::Window::glfwInitialized = true;
+//    }
+
+    return glAbs::Destroyer(); //when the main function ends the destructor of Destroyer gets called and glfw get terminated
 }
