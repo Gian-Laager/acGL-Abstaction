@@ -64,6 +64,9 @@ void glAbs::hello_GL()
     VertexBufferLayout* positionLayout;
     VertexBuffer* vertexBuffer;
 
+    glfwWindowSettings settings;
+    settings.runMainLoopInParallel = false;
+
     Window window([&]() {
         const char* versionGL;
         glCall(versionGL = (char*) (glGetString(GL_VERSION)));
@@ -89,7 +92,7 @@ void glAbs::hello_GL()
         renderer = new Renderer(vertexBuffer, positionLayout, 1, shader);
     }, [&]() {
         renderer->draw(3);
-    });
+    }, []() { std::cout << "mainloop finished" << std::endl; }, settings);
 
     window.runMainLoop();
 
@@ -112,4 +115,10 @@ void glAbs::hello_GL()
 //    }
 //
 //    glfwTerminate();
+}
+
+void init()
+{
+    //TODO: implement this function to initialize every thing
+    throw "not implemented";
 }

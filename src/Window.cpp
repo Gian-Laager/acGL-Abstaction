@@ -7,7 +7,8 @@ glAbs::Window::Window(std::function<void()> setup, std::function<void()> mainloo
                       glfwWindowSettings settings) : setup(std::move(setup)),
                                                      mainloop(std::move(mainloop)),
                                                      callback(std::move(callback)),
-                                                     settings(std::move(settings))
+                                                     settings(std::move(settings)),
+                                                     showWindow(true)
 {
     if (!glAbs::Window::glfwInitialized)
     {
@@ -19,7 +20,9 @@ glAbs::Window::Window(std::function<void()> setup, std::function<void()> mainloo
     for (auto& windowHint : this->settings.windowHints)
         glfwWindowHint(windowHint.hint, *windowHint.value);
 
-    glfwWindow = glfwCreateWindow(this->settings.width, this->settings.height, this->settings.title, this->settings.monitor, this->settings.share);
+    glfwWindow =
+            glfwCreateWindow(this->settings.width, this->settings.height, &this->settings.title[0],
+                             this->settings.monitor, this->settings.share);
 
     if (!glfwWindow)
     {
@@ -43,7 +46,30 @@ glAbs::Window::Window(std::function<void()> setup, std::function<void()> mainloo
 
 void glAbs::Window::runMainLoop()
 {
-    mainLoopFuture = std::async(std::launch::async, [&]() {
+    if (settings.runMainLoopInParallel)
+    {
+        mainLoopFuture = std::async(std::launch::async, [&]() {
+            glfwMakeContextCurrent(glfwWindow);
+
+            setup();
+
+            while (!glfwWindowShouldClose(glfwWindow) && showWindow)
+            {
+                glCall(glClearColor(settings.clearColor.x, settings.clearColor.y, settings.clearColor.z,
+                                    settings.clearColor.w));
+                glCall(glClear(settings.clearMask));
+
+                mainloop();
+
+                glfwSwapBuffers(glfwWindow);
+                glfwPollEvents();
+            }
+
+            callback();
+            glfwTerminate();
+        });
+    } else
+    {
         glfwMakeContextCurrent(glfwWindow);
 
         setup();
@@ -62,12 +88,7 @@ void glAbs::Window::runMainLoop()
 
         callback();
         glfwTerminate();
-    });
-}
-
-glAbs::Window::~Window()
-{
-    delete glfwWindow;
+    }
 }
 
 glAbs::Window::Window(glAbs::Window&& window) noexcept: setup(std::move(window.setup)),
@@ -79,26 +100,34 @@ glAbs::Window::Window(glAbs::Window&& window) noexcept: setup(std::move(window.s
     window.glfwWindow = nullptr;
 }
 
-std::future<void>& glAbs::Window::getMainLoopFuture() const
+const std::future<void>& glAbs::Window::getMainLoopFuture() const
 {
     return (std::future<void>&) mainLoopFuture;
 }
 
-glAbs::glfwWindowSettings::~glfwWindowSettings()
+glAbs::Window::~Window()
 {
-    delete majorContextVersion;
-    delete minorContextVersion;
-    delete monitor;
-    delete share;
+    delete glfwWindow;
 }
 
 glAbs::glfwWindowSettings::glfwWindowSettings(glAbs::glfwWindowSettings&& settings) noexcept: dimensions(
         settings.dimensions),
                                                                                               width(settings.width),
                                                                                               height(settings.height),
-                                                                                              title(std::move(settings.title)),
+                                                                                              title(std::move(
+                                                                                                      settings.title)),
+                                                                                              majorContextVersion(
+                                                                                                      std::move(
+                                                                                                              settings.majorContextVersion)),
+                                                                                              minorContextVersion(
+                                                                                                      std::move(
+                                                                                                              settings.minorContextVersion)),
                                                                                               windowHints(std::move(
                                                                                                       settings.windowHints)),
+                                                                                              monitor(std::move(
+                                                                                                      settings.monitor)),
+                                                                                              share(std::move(
+                                                                                                      settings.share)),
                                                                                               runMainLoopInParallel(
                                                                                                       settings.runMainLoopInParallel),
                                                                                               clearMask(
@@ -110,28 +139,20 @@ glAbs::glfwWindowSettings::glfwWindowSettings(glAbs::glfwWindowSettings&& settin
                                                                                               clearColor(
                                                                                                       settings.clearColor)
 {
-    majorContextVersion = settings.majorContextVersion;
-    settings.majorContextVersion = nullptr;
-    minorContextVersion = settings.minorContextVersion;
-    settings.minorContextVersion = nullptr;
-    monitor = settings.monitor;
-    settings.monitor = nullptr;
-    share = settings.share;
-    settings.share = nullptr;
 }
 
 glAbs::glfwWindowSettings::glfwWindowSettings() : dimensions(2),
                                                   width(640),
                                                   height(480),
                                                   title("title"),
-                                                  majorContextVersion(new int),
-                                                  minorContextVersion(new int),
+//                                                  majorContextVersion(new int),
+//                                                  minorContextVersion(new int),
                                                   windowHints(std::vector<WindowHint>()/*
                                                           WindowHint{GLFW_CONTEXT_VERSION_MAJOR, majorContextVersion},
                                                           WindowHint{GLFW_CONTEXT_VERSION_MINOR, minorContextVersion},
                                                           WindowHint{GLFW_OPENGL_PROFILE,
-                                                                     new int(GLFW_OPENGL_CORE_PROFILE)},
-                                                          WindowHint{GLFW_OPENGL_FORWARD_COMPAT, new int(true)})*/),
+                                                                     std::make_shared<int>(GLFW_OPENGL_CORE_PROFILE)},
+                                                          WindowHint{GLFW_OPENGL_FORWARD_COMPAT, std::make_shared<int>(true)})*/),
                                                   monitor(nullptr),
                                                   share(nullptr),
                                                   runMainLoopInParallel(true),
@@ -140,16 +161,38 @@ glAbs::glfwWindowSettings::glfwWindowSettings() : dimensions(2),
                                                   swapInterval(1),
                                                   clearColor(glm::vec4(0.0f, 0.0f, 0.0f, 1.0f))
 {
-    *majorContextVersion = 4;
-    *minorContextVersion = 1;
+    majorContextVersion = std::shared_ptr<int>(std::make_shared<int>(4));
+    minorContextVersion = std::shared_ptr<int>(std::make_shared<int>(1));
     windowHints.reserve(4);
     windowHints.push_back(WindowHint{GLFW_CONTEXT_VERSION_MAJOR, majorContextVersion});
     windowHints.push_back(WindowHint{GLFW_CONTEXT_VERSION_MINOR, minorContextVersion});
-    windowHints.push_back(WindowHint{GLFW_OPENGL_PROFILE, new int(GLFW_OPENGL_CORE_PROFILE)});
-    windowHints.push_back(WindowHint{GLFW_OPENGL_FORWARD_COMPAT, new int(true)});
+    windowHints.push_back(
+            WindowHint{GLFW_OPENGL_PROFILE, std::shared_ptr<int>(std::make_shared<int>(GLFW_OPENGL_CORE_PROFILE))});
+    windowHints.push_back(WindowHint{GLFW_OPENGL_FORWARD_COMPAT, std::shared_ptr<int>(std::make_shared<int>(true))});
 }
 
-glAbs::WindowHint::~WindowHint()
+glAbs::glfwWindowSettings::glfwWindowSettings(const glAbs::glfwWindowSettings& settings) noexcept: dimensions(
+        settings.dimensions),
+                                                                                                   width(settings.width),
+                                                                                                   height(settings.height),
+                                                                                                   title(settings.title),
+                                                                                                   majorContextVersion(
+                                                                                                           std::make_shared<int>(
+                                                                                                                   *settings.majorContextVersion)),
+                                                                                                   minorContextVersion(
+                                                                                                           std::make_shared<int>(
+                                                                                                                   *settings.minorContextVersion)),
+                                                                                                   windowHints(
+                                                                                                           settings.windowHints),
+
+
+)
 {
-    delete value;
+    moni
 }
+
+glAbs::WindowHint::WindowHint(glAbs::WindowHint&& hint) noexcept: hint(hint.hint),
+                                                                  value(std::move(hint.value)) {}
+
+glAbs::WindowHint::WindowHint(int hint, std::shared_ptr<int> value) : hint(hint),
+                                                                      value(std::move(value)) {}

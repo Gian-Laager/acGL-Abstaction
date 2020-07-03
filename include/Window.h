@@ -11,26 +11,28 @@ namespace glAbs
 {
     struct WindowHint
     {
-        int hint, * value;
+        WindowHint(int i, std::shared_ptr<int> pInt);
 
-        ~WindowHint();
+        int hint;
+        std::shared_ptr<int> value;
+
+        WindowHint(WindowHint&& hint) noexcept;
     };
 
     struct glfwWindowSettings
     {
         glfwWindowSettings();
 
-        ~glfwWindowSettings();
-
         glfwWindowSettings(glfwWindowSettings&& settings) noexcept;
+        glfwWindowSettings(const glfwWindowSettings& settings) noexcept;
 
         unsigned int dimensions;
         int width;
         int height;
-        const char* title;
+        std::string title;
 
-        int* majorContextVersion;
-        int* minorContextVersion;
+        std::shared_ptr<int> majorContextVersion;
+        std::shared_ptr<int> minorContextVersion;
         std::vector<WindowHint> windowHints;
 
         GLFWmonitor* monitor;
@@ -49,15 +51,15 @@ namespace glAbs
     private:
         static bool glfwInitialized;
         static bool glewInitialized;
-        GLFWwindow* glfwWindow;
         std::function<void()> setup;
         std::function<void()> mainloop;
         std::function<void()> callback;
         glfwWindowSettings settings;
+        GLFWwindow* glfwWindow;
         std::future<void> mainLoopFuture;
 
     public:
-        bool showWindow = true;
+        bool showWindow;
 
         Window(std::function<void()> setup, std::function<void()> mainloop, std::function<void()> callback = [] {},
                glfwWindowSettings settings = glfwWindowSettings());
@@ -68,7 +70,7 @@ namespace glAbs
 
         Window(Window&& window) noexcept;
 
-        std::future<void>& getMainLoopFuture() const;
+        const std::future<void>& getMainLoopFuture() const;
     };
 }
 #endif //ACGL_ABSTRACTION_WINDOW_H

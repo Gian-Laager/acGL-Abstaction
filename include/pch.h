@@ -39,5 +39,6 @@ namespace glAbs::GLErrorHandling
 #include <set>
 #include <array>
 #include <future>
+#include <memory>
 
 #endif //ACGL_ABSTRACTION_PCH_H

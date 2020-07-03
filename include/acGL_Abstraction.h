@@ -8,6 +8,8 @@
 namespace glAbs
 {
     void hello_GL();
+
+    void init();
 }
 
 #endif //GL_ABSTRACTION_ACGL_ABSTRACTION_H
