@@ -25,6 +25,7 @@ set(SRC_FILES
         ${acGL_Abstraction_ROOT_DIR}/src/Shader.cpp
         ${acGL_Abstraction_ROOT_DIR}/src/Buffer.cpp
         ${acGL_Abstraction_ROOT_DIR}/src/Texture.cpp
+        ${acGL_Abstraction_ROOT_DIR}/src/Window.cpp
 
         #Dependencies
         ${acGL_Abstraction_ROOT_DIR}/deps/stb/stb_image.cpp
@@ -43,6 +44,7 @@ set(HEAD_FILES
         ${acGL_Abstraction_ROOT_DIR}/include/VertexBufferLayout.h
         ${acGL_Abstraction_ROOT_DIR}/include/Buffer.h
         ${acGL_Abstraction_ROOT_DIR}/include/Texture.h
+        ${acGL_Abstraction_ROOT_DIR}/include/Window.h
 
         #Dependencies
         ${acGL_Abstraction_ROOT_DIR}/deps/stb/stb_image.h
@@ -56,14 +58,17 @@ find_package(glfw3 REQUIRED)
 
 set(GLEW_DIR ${acGL_Abstraction_ROOT_DIR}/deps/glew)
 find_package(GLEW REQUIRED)
-include_directories("${acGL_Abstraction_ROOT_DIR}/deps/glew/include"
-                    "${acGL_Abstraction_ROOT_DIR}/deps/glfw/include"
-                    "${acGL_Abstraction_ROOT_DIR}/deps/stb"
-                    "${acGL_Abstraction_ROOT_DIR}/deps/glm/glm"
-        )
-link_directories("${acGL_Abstraction_ROOT_DIR}/deps/glew/lib"
-                 "${acGL_Abstraction_ROOT_DIR}/deps/glfw/src/"
-        )
+
+include_directories(
+        "${acGL_Abstraction_ROOT_DIR}/deps/glew/include"
+        "${acGL_Abstraction_ROOT_DIR}/deps/glfw/include"
+        "${acGL_Abstraction_ROOT_DIR}/deps/stb"
+        "${acGL_Abstraction_ROOT_DIR}/deps/glm/glm"
+)
+link_directories(
+        "${acGL_Abstraction_ROOT_DIR}/deps/glew/lib"
+        "${acGL_Abstraction_ROOT_DIR}/deps/glfw/src/"
+)
 
 find_package(OpenGL REQUIRED)
 
@@ -80,6 +85,7 @@ set_target_properties(${target} PROPERTIES DEBUG_POSTFIX _d)
 
 target_link_libraries(${target} ${LIBS})
 target_include_directories(${target} PRIVATE ${OPENGL_INCLUDE_DIR})
+
 
 set(cgex $<CONFIGURATION>)
 

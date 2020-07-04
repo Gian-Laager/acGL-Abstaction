@@ -1689,6 +1689,10 @@ set
 -
 array
 -
+future
+-
+memory
+-
 
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-debug/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/pch.h
@@ -1769,6 +1773,10 @@ set
 -
 array
 -
+future
+-
+memory
+-
 
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Buffer.cpp
 Buffer.h
@@ -1809,4 +1817,6 @@ Window.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/acGL_Abstraction.cpp
 acGL_Abstraction.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/acGL_Abstraction.h
+Window.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.h
 

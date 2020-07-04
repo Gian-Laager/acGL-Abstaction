@@ -33,3 +33,5 @@
 *.exe
 *.out
 *.app
+
+test/basic_window/cmake-build-debug/basic_window_d
