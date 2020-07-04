@@ -1,12 +1,14 @@
 #include "Window.h"
 
-glAbs::Window::Window(std::function<void()> mainloop,std::function<void()> setup, std::function<void()> callback,
-                       glAbs::glfwWindowSettings settings) : setup(std::move(setup)),
-                                                     mainloop(std::move(mainloop)),
-                                                     callback(std::move(callback)),
-                                                     settings(std::move(settings)),
-                                                     glfwWindow(nullptr),
-                                                     showWindow(true)
+std::mutex glAbs::Window::glfwMutex;
+
+glAbs::Window::Window(std::function<void()> mainloop, std::function<void()> setup, std::function<void()> callback,
+                      glAbs::glfwWindowSettings settings) : setup(std::move(setup)),
+                                                            mainloop(std::move(mainloop)),
+                                                            callback(std::move(callback)),
+                                                            settings(std::move(settings)),
+                                                            glfwWindow(nullptr),
+                                                            showWindow(true)
 {
 
     glfwWindow = glfwCreateWindow(this->settings.width, this->settings.height, &this->settings.title[0],
@@ -26,50 +28,71 @@ void glAbs::Window::runMainLoop()
     //TODO: Implement this if statement to run the main loop in parallel
 //    if (settings.runMainLoopInParallel)
 //    {
+//        glfwMakeContextCurrent(nullptr);
 //        mainLoopFuture = std::async(std::launch::async, [&]() {
-//            glfwMakeContextCurrent(glfwWindow);
+//            bool first = true;
+//            glfwMutex.lock();
+//            glfwMakeContextCurrent(this->glfwWindow);
+//            glfwShowWindow(this->glfwWindow);
 //
-//            setup();
+//            this->setup();
 //
-//            while (!glfwWindowShouldClose(glfwWindow) && showWindow)
+//            while (!glfwWindowShouldClose(this->glfwWindow) && this->showWindow)
 //            {
-//                std::cout << "main loop started" << std::endl;
-//                glCall(glClearColor(settings.clearColor.x, settings.clearColor.y, settings.clearColor.z,
-//                                    settings.clearColor.w));
-//                glCall(glClear(settings.clearMask));
+//                if (!first)
+//                    glfwMutex.lock();
 //
-//                mainloop();
+//                glfwMakeContextCurrent(this->glfwWindow);
 //
-//                glfwSwapBuffers(glfwWindow);
-//                glfwPollEvents();
-//                std::cout << "end of main loop" << std::endl;
+//
+//                std::cout << "this = " << this << std::endl
+//                << "this->glfwWindow = " << this->glfwWindow << std::endl;
+//                glCall(glClearColor(this->settings.clearColor.x, this->settings.clearColor.y, this->settings.clearColor.z,
+//                                    this->settings.clearColor.w));
+//                glCall(glClear(this->settings.clearMask));
+//
+//                this->mainloop();
+//
+//                glfwSwapBuffers(this->glfwWindow);
+//
+//                glfwMakeContextCurrent(nullptr);
+//
+//                glfwMutex.unlock();
+////                std::cout << "end of main loop" << std::endl;
+//                first = false;
 //            }
 //
 //            callback();
 //        });
 //    } else
+//    {
+    mainLoopFuture = std::async(std::launch::async, []() {});
+    glfwMakeContextCurrent(glfwWindow);
+
+    setup();
+
+    glfwShowWindow(glfwWindow);
+
+    while (!glfwWindowShouldClose(glfwWindow) && showWindow)
     {
-        mainLoopFuture = std::async(std::launch::async, []() {});
+        glfwMutex.lock();
         glfwMakeContextCurrent(glfwWindow);
+//            std::cout << "main loop started" << std::endl;
+        glCall(glClearColor(settings.clearColor.x, settings.clearColor.y, settings.clearColor.z,
+                            settings.clearColor.w));
+        glCall(glClear(settings.clearMask));
 
-        setup();
+        mainloop();
 
-        while (!glfwWindowShouldClose(glfwWindow) && showWindow)
-        {
-            std::cout << "main loop started" << std::endl;
-            glCall(glClearColor(settings.clearColor.x, settings.clearColor.y, settings.clearColor.z,
-                                settings.clearColor.w));
-            glCall(glClear(settings.clearMask));
-
-            mainloop();
-
-            glfwSwapBuffers(glfwWindow);
-            glfwPollEvents();
-            std::cout << "end of main loop" << std::endl;
-        }
-
-        callback();
+        glfwSwapBuffers(glfwWindow);
+        glfwPollEvents();
+        glfwMakeContextCurrent(nullptr);
+        glfwMutex.unlock();
+//            std::cout << "end of main loop" << std::endl;
     }
+
+    callback();
+//    }
 }
 
 glAbs::Window::Window(glAbs::Window&& window) noexcept: setup(std::move(window.setup)),

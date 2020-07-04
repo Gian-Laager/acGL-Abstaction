@@ -2,7 +2,7 @@
 
 int main()
 {
-//    glAbs::MainWindowSettings::getInstance()->
+//    glAbs::MainWindowSettings::getInstance()->runMainLoopInParallel = true;
     glAbs_Init();
     glAbs::hello_GL();
     return 0;

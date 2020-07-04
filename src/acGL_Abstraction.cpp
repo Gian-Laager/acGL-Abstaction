@@ -25,10 +25,10 @@ void glAbs::hello_GL()
         float x, y;
     };
 
-    Shader* shader;
-    Renderer* renderer;
-    VertexBufferLayout* positionLayout;
-    VertexBuffer* vertexBuffer;
+    Shader shader("../../../res/shaders/basic2dShader.glsl");
+    VertexBufferLayout positionLayout(0, 2, GL_FLOAT, false, sizeof(Vertex), nullptr);;
+    VertexBuffer vertexBuffer;
+    Renderer renderer(&vertexBuffer, &positionLayout, 1, &shader);
 
     glfwWindowSettings settings;
 //    settings.runMainLoopInParallel = true;
@@ -38,31 +38,22 @@ void glAbs::hello_GL()
         glCall(versionGL = (char*) (glGetString(GL_VERSION)));
         std::cout << "openGl version: " << versionGL << std::endl;
 
-        vertexBuffer = new VertexBuffer();
-
         Vertex vb_data[] = {
                 Vertex{0.5f, -0.5f},
                 Vertex{-0.5f, -0.5f},
                 Vertex{0.0f, 0.5f}
         };
 
-        vertexBuffer->data(vb_data, sizeof(Vertex) * 3, GL_STATIC_DRAW);
-
-        positionLayout = new VertexBufferLayout(0, 2, GL_FLOAT, false, sizeof(Vertex), nullptr);
-
-        shader = new Shader("../../../res/shaders/basic2dShader.glsl");
-
-        renderer = new Renderer(vertexBuffer, positionLayout, 1, shader);
+        vertexBuffer.data(vb_data, sizeof(Vertex) * 3, GL_STATIC_DRAW);
     };
 
     mainWindow->mainloop = [&renderer] {
-        renderer->draw(3);
+        renderer.draw(3);
     };
-    mainWindow->callback = [] { std::cout << "mainloop finished" << std::endl; };
 
     mainWindow->runMainLoop();
 
-//    window.getMainLoopFuture()->wait();
+    mainWindow->getMainLoopFuture()->wait();
 }
 
 glAbs::Destroyer::~Destroyer()
@@ -76,8 +67,6 @@ glAbs::Destroyer::~Destroyer()
 
 glAbs::Destroyer glAbs::init()
 {
-    //TODO: implement this function to initialize every thing
-
     if (!glAbs::glfwInitialized)
     {
         if (!glfwInit())

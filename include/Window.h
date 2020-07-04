@@ -50,6 +50,7 @@ namespace glAbs
     class Window
     {
     public:
+        static std::mutex glfwMutex;
         std::function<void()> setup;
         std::function<void()> mainloop;
         std::function<void()> callback;
