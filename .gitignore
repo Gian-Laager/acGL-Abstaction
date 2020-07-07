@@ -33,9 +33,3 @@
 *.exe
 *.out
 *.app
-
-# CMake build directories
-cmake-build-debug/
-cmake-build-release/
-test/basic_window/cmake-build-debug/
-test/basic_window/cmake-build-release/

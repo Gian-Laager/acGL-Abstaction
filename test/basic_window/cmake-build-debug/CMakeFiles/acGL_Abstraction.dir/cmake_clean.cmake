@@ -1,16 +1,25 @@
 file(REMOVE_RECURSE
   "CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/stb/stb_image.cpp.o"
   "CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Buffer.cpp.o"
+<<<<<<< feature/renderer-refactory
+=======
+  "CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.cpp.o"
+>>>>>>> undo of the updated gitignore.
   "CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/IndexBuffer.cpp.o"
   "CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Renderer.cpp.o"
   "CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Shader.cpp.o"
   "CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Texture.cpp.o"
   "CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArray.cpp.o"
+<<<<<<< feature/renderer-refactory
   "CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp.o"
   "CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBuffer.cpp.o"
   "CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferLayout.cpp.o"
   "CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp.o"
   "CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp.o"
+=======
+  "CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBuffer.cpp.o"
+  "CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferLayout.cpp.o"
+>>>>>>> undo of the updated gitignore.
   "CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.cpp.o"
   "CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/acGL_Abstraction.cpp.o"
   "CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch"

@@ -1592,10 +1592,78 @@ intrin.h
 arm_neon.h
 -
 
+<<<<<<< feature/renderer-refactory
+=======
+../../../include/Buffer.h
+pch.h
+../../../include/pch.h
+
+../../../include/Drawable.h
+
+../../../include/IndexBuffer.h
+Buffer.h
+../../../include/Buffer.h
+
+../../../include/Renderer.h
+pch.h
+../../../include/pch.h
+Shader.h
+../../../include/Shader.h
+IndexBuffer.h
+../../../include/IndexBuffer.h
+VertexArray.h
+../../../include/VertexArray.h
+VertexBuffer.h
+../../../include/VertexBuffer.h
+VertexBufferLayout.h
+../../../include/VertexBufferLayout.h
+Texture.h
+../../../include/Texture.h
+
+../../../include/Shader.h
+pch.h
+../../../include/pch.h
+
+../../../include/Texture.h
+pch.h
+../../../include/pch.h
+
+../../../include/VertexArray.h
+pch.h
+../../../include/pch.h
+IndexBuffer.h
+../../../include/IndexBuffer.h
+VertexBuffer.h
+../../../include/VertexBuffer.h
+VertexBufferLayout.h
+../../../include/VertexBufferLayout.h
+
+../../../include/VertexBuffer.h
+Buffer.h
+../../../include/Buffer.h
+
+../../../include/VertexBufferLayout.h
+Shader.h
+../../../include/Shader.h
+
+>>>>>>> undo of the updated gitignore.
 ../../../include/Window.h
 pch.h
 ../../../include/pch.h
 
+<<<<<<< feature/renderer-refactory
+=======
+../../../include/acGL_Abstraction.h
+pch.h
+../../../include/pch.h
+Renderer.h
+../../../include/Renderer.h
+Window.h
+../../../include/Window.h
+Drawable.h
+../../../include/Drawable.h
+
+>>>>>>> undo of the updated gitignore.
 ../../../include/pch.h
 GL/glew.h
 ../../../include/GL/glew.h
@@ -1640,10 +1708,92 @@ memory
 map
 -
 
+<<<<<<< feature/renderer-refactory
+=======
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/stb/stb_image.cpp
+stb_image.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/stb/stb_image.h
+
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/stb/stb_image.h
+stb_image.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/stb/stb_image.h
+stdio.h
+-
+stdlib.h
+-
+stdarg.h
+-
+stddef.h
+-
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+math.h
+-
+stdio.h
+-
+assert.h
+-
+stdint.h
+-
+emmintrin.h
+-
+intrin.h
+-
+arm_neon.h
+-
+
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Buffer.cpp
+Buffer.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Buffer.h
+
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.cpp
+Drawable.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.h
+
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/IndexBuffer.cpp
+IndexBuffer.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/IndexBuffer.h
+
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Renderer.cpp
+Renderer.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Renderer.h
+
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Shader.cpp
+Shader.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Shader.h
+
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Texture.cpp
+Texture.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Texture.h
+
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArray.cpp
+VertexArray.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArray.h
+
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBuffer.cpp
+VertexBuffer.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBuffer.h
+
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferLayout.cpp
+VertexBufferLayout.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferLayout.h
+
+>>>>>>> undo of the updated gitignore.
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.cpp
 Window.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.h
 
+<<<<<<< feature/renderer-refactory
+=======
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/acGL_Abstraction.cpp
+acGL_Abstraction.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/acGL_Abstraction.h
+
+>>>>>>> undo of the updated gitignore.
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/../../include/pch.h
 GL/glew.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/GL/glew.h
@@ -1692,3 +1842,8 @@ map
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/../../include/pch.h
 -
 
+<<<<<<< feature/renderer-refactory
+=======
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-debug/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.cxx
+
+>>>>>>> undo of the updated gitignore.

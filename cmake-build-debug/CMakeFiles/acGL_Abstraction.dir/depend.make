@@ -645,8 +645,11 @@ CMakeFiles/acGL_Abstraction.dir/src/Buffer.cpp.o: CMakeFiles/acGL_Abstraction.di
 CMakeFiles/acGL_Abstraction.dir/src/Buffer.cpp.o: ../include/pch.h
 CMakeFiles/acGL_Abstraction.dir/src/Buffer.cpp.o: ../src/Buffer.cpp
 
+<<<<<<< feature/renderer-refactory
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> undo of the updated gitignore.
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../deps/glew/include/GL/glew.h
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../deps/glfw/include/GLFW/glfw3.h
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../deps/glm/glm/common.hpp
@@ -857,6 +860,7 @@ CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../deps/glm/glm/vec3.hpp
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../deps/glm/glm/vec4.hpp
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../deps/glm/glm/vector_relational.hpp
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../deps/stb/stb_image.h
+<<<<<<< feature/renderer-refactory
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../include/Buffer.h
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../include/Drawable.h
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../include/IndexBuffer.h
@@ -868,11 +872,17 @@ CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../include/VertexBuffer.h
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../include/VertexBufferLayout.h
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../include/Window.h
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../include/pch.h
+=======
+CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../include/Drawable.h
+>>>>>>> undo of the updated gitignore.
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../include/pch.h
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../src/Drawable.cpp
 
+<<<<<<< feature/renderer-refactory
 >>>>>>> Stashed changes
+=======
+>>>>>>> undo of the updated gitignore.
 CMakeFiles/acGL_Abstraction.dir/src/IndexBuffer.cpp.o: ../deps/glew/include/GL/glew.h
 CMakeFiles/acGL_Abstraction.dir/src/IndexBuffer.cpp.o: ../deps/glfw/include/GLFW/glfw3.h
 CMakeFiles/acGL_Abstraction.dir/src/IndexBuffer.cpp.o: ../deps/glm/glm/common.hpp
@@ -3481,6 +3491,7 @@ CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../deps/glm/glm/vec4
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../deps/glm/glm/vector_relational.hpp
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../deps/stb/stb_image.h
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../include/Buffer.h
+CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../include/Drawable.h
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../include/IndexBuffer.h
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../include/Renderer.h
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../include/Shader.h

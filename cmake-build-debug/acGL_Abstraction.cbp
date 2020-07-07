@@ -162,6 +162,9 @@
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/Buffer.h">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/Drawable.h">
+			<Option target="acGL_Abstraction"/>
+		</Unit>
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/IndexBuffer.h">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
@@ -202,6 +205,9 @@
 			<Option target="acGL_Abstraction"/>
 		</Unit>
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Buffer.cpp">
+			<Option target="acGL_Abstraction"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.cpp">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/IndexBuffer.cpp">

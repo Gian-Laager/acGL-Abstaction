@@ -12,6 +12,9 @@ CMAKE_PROGRESS_11 = 11
 CMAKE_PROGRESS_12 = 12
 CMAKE_PROGRESS_13 = 13
 CMAKE_PROGRESS_14 = 14
+<<<<<<< feature/renderer-refactory
 CMAKE_PROGRESS_15 = 15
 CMAKE_PROGRESS_16 = 16
+=======
+>>>>>>> undo of the updated gitignore.
 

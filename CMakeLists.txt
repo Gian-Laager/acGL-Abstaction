@@ -91,8 +91,8 @@ target_precompile_headers(${target} PRIVATE ${PCH_H})
 
 set_target_properties(${target} PROPERTIES DEBUG_POSTFIX _d)
 
-target_link_libraries(${target} ${LIBS})
 target_include_directories(${target} PRIVATE ${OPENGL_INCLUDE_DIR})
+target_link_libraries(${target} ${LIBS})
 
 
 set(cgex $<CONFIGURATION>)

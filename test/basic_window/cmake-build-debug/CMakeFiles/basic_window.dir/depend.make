@@ -212,15 +212,24 @@ CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../deps/glm/glm/vec4.hpp
 CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../deps/glm/glm/vector_relational.hpp
 CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../deps/stb/stb_image.h
 CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../include/Buffer.h
+<<<<<<< feature/renderer-refactory
+=======
+CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../include/Drawable.h
+>>>>>>> undo of the updated gitignore.
 CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../include/IndexBuffer.h
 CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../include/Renderer.h
 CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../include/Shader.h
 CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../include/Texture.h
 CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../include/VertexArray.h
+<<<<<<< feature/renderer-refactory
 CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../include/VertexArrayRenderer.h
 CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../include/VertexBuffer.h
 CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../include/VertexBufferLayout.h
 CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../include/VertexBufferRenderer.h
+=======
+CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../include/VertexBuffer.h
+CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../include/VertexBufferLayout.h
+>>>>>>> undo of the updated gitignore.
 CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../include/Window.h
 CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../include/acGL_Abstraction.h
 CMakeFiles/basic_window.dir/basic_window.cpp.o: ../../../include/pch.h
