@@ -11,8 +11,11 @@ CMAKE_PROGRESS_10 = 10
 CMAKE_PROGRESS_11 = 11
 CMAKE_PROGRESS_12 = 12
 CMAKE_PROGRESS_13 = 13
+<<<<<<< feature/renderer-refactory
 CMAKE_PROGRESS_14 = 14
 CMAKE_PROGRESS_15 = 15
 CMAKE_PROGRESS_16 = 16
 CMAKE_PROGRESS_17 = 17
+=======
+>>>>>>> Auto stash before rebase of "origin/develop"
 

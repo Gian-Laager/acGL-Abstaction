@@ -221,6 +221,7 @@ CMakeFiles/acGL_Abstraction.dir/src/Window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/acGL_Abstraction.dir/src/Window.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-debug/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch -S /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.cpp -o CMakeFiles/acGL_Abstraction.dir/src/Window.cpp.s
 
+<<<<<<< feature/renderer-refactory
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: CMakeFiles/acGL_Abstraction.dir/flags.make
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../src/Drawable.cpp
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx
@@ -281,11 +282,17 @@ CMakeFiles/acGL_Abstraction.dir/src/VertexIndexBufferRenderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/acGL_Abstraction.dir/src/VertexIndexBufferRenderer.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-debug/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch -S /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp -o CMakeFiles/acGL_Abstraction.dir/src/VertexIndexBufferRenderer.cpp.s
 
+=======
+>>>>>>> Auto stash before rebase of "origin/develop"
 CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o: CMakeFiles/acGL_Abstraction.dir/flags.make
 CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o: ../deps/stb/stb_image.cpp
 CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o: CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx
 CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o: CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch
+<<<<<<< feature/renderer-refactory
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o"
+>>>>>>> Auto stash before rebase of "origin/develop"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-debug/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch -o CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o -c /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/stb/stb_image.cpp
 
 CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.i: cmake_force
@@ -308,10 +315,13 @@ acGL_Abstraction_OBJECTS = \
 "CMakeFiles/acGL_Abstraction.dir/src/Buffer.cpp.o" \
 "CMakeFiles/acGL_Abstraction.dir/src/Texture.cpp.o" \
 "CMakeFiles/acGL_Abstraction.dir/src/Window.cpp.o" \
+<<<<<<< feature/renderer-refactory
 "CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o" \
 "CMakeFiles/acGL_Abstraction.dir/src/VertexArrayRenderer.cpp.o" \
 "CMakeFiles/acGL_Abstraction.dir/src/VertexBufferRenderer.cpp.o" \
 "CMakeFiles/acGL_Abstraction.dir/src/VertexIndexBufferRenderer.cpp.o" \
+=======
+>>>>>>> Auto stash before rebase of "origin/develop"
 "CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o"
 
 # External object files for target acGL_Abstraction
@@ -328,6 +338,7 @@ libacGL_Abstraction_d.dylib: CMakeFiles/acGL_Abstraction.dir/src/Shader.cpp.o
 libacGL_Abstraction_d.dylib: CMakeFiles/acGL_Abstraction.dir/src/Buffer.cpp.o
 libacGL_Abstraction_d.dylib: CMakeFiles/acGL_Abstraction.dir/src/Texture.cpp.o
 libacGL_Abstraction_d.dylib: CMakeFiles/acGL_Abstraction.dir/src/Window.cpp.o
+<<<<<<< feature/renderer-refactory
 libacGL_Abstraction_d.dylib: CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o
 libacGL_Abstraction_d.dylib: CMakeFiles/acGL_Abstraction.dir/src/VertexArrayRenderer.cpp.o
 libacGL_Abstraction_d.dylib: CMakeFiles/acGL_Abstraction.dir/src/VertexBufferRenderer.cpp.o
@@ -338,6 +349,14 @@ libacGL_Abstraction_d.dylib: ../deps/glew/lib/libGLEW.a
 libacGL_Abstraction_d.dylib: ../deps/glfw/src/libglfw.3.dylib
 libacGL_Abstraction_d.dylib: CMakeFiles/acGL_Abstraction.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX shared library libacGL_Abstraction_d.dylib"
+=======
+libacGL_Abstraction_d.dylib: CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o
+libacGL_Abstraction_d.dylib: CMakeFiles/acGL_Abstraction.dir/build.make
+libacGL_Abstraction_d.dylib: ../deps/glew/lib/libGLEW.dylib
+libacGL_Abstraction_d.dylib: ../deps/glfw/src/libglfw.3.dylib
+libacGL_Abstraction_d.dylib: CMakeFiles/acGL_Abstraction.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX shared library libacGL_Abstraction_d.dylib"
+>>>>>>> Auto stash before rebase of "origin/develop"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/acGL_Abstraction.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

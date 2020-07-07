@@ -6,6 +6,7 @@
 #include "VertexBufferRenderer.h"
 #include "VertexArrayRenderer.h"
 #include "Window.h"
+#include "Drawable.h"
 
 namespace glAbs
 {

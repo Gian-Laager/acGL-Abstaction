@@ -645,6 +645,7 @@ CMakeFiles/acGL_Abstraction.dir/src/Buffer.cpp.o: CMakeFiles/acGL_Abstraction.di
 CMakeFiles/acGL_Abstraction.dir/src/Buffer.cpp.o: ../include/pch.h
 CMakeFiles/acGL_Abstraction.dir/src/Buffer.cpp.o: ../src/Buffer.cpp
 
+<<<<<<< feature/renderer-refactory
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../deps/glew/include/GL/glew.h
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../deps/glfw/include/GLFW/glfw3.h
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../deps/glm/glm/common.hpp
@@ -870,6 +871,8 @@ CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: CMakeFiles/acGL_Abstraction.
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../include/pch.h
 CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../src/Drawable.cpp
 
+=======
+>>>>>>> Auto stash before rebase of "origin/develop"
 CMakeFiles/acGL_Abstraction.dir/src/IndexBuffer.cpp.o: ../deps/glew/include/GL/glew.h
 CMakeFiles/acGL_Abstraction.dir/src/IndexBuffer.cpp.o: ../deps/glfw/include/GLFW/glfw3.h
 CMakeFiles/acGL_Abstraction.dir/src/IndexBuffer.cpp.o: ../deps/glm/glm/common.hpp
@@ -1963,6 +1966,7 @@ CMakeFiles/acGL_Abstraction.dir/src/VertexArray.cpp.o: CMakeFiles/acGL_Abstracti
 CMakeFiles/acGL_Abstraction.dir/src/VertexArray.cpp.o: ../include/pch.h
 CMakeFiles/acGL_Abstraction.dir/src/VertexArray.cpp.o: ../src/VertexArray.cpp
 
+<<<<<<< feature/renderer-refactory
 CMakeFiles/acGL_Abstraction.dir/src/VertexArrayRenderer.cpp.o: ../deps/glew/include/GL/glew.h
 CMakeFiles/acGL_Abstraction.dir/src/VertexArrayRenderer.cpp.o: ../deps/glfw/include/GLFW/glfw3.h
 CMakeFiles/acGL_Abstraction.dir/src/VertexArrayRenderer.cpp.o: ../deps/glm/glm/common.hpp
@@ -2187,6 +2191,8 @@ CMakeFiles/acGL_Abstraction.dir/src/VertexArrayRenderer.cpp.o: CMakeFiles/acGL_A
 CMakeFiles/acGL_Abstraction.dir/src/VertexArrayRenderer.cpp.o: ../include/pch.h
 CMakeFiles/acGL_Abstraction.dir/src/VertexArrayRenderer.cpp.o: ../src/VertexArrayRenderer.cpp
 
+=======
+>>>>>>> Auto stash before rebase of "origin/develop"
 CMakeFiles/acGL_Abstraction.dir/src/VertexBuffer.cpp.o: ../deps/glew/include/GL/glew.h
 CMakeFiles/acGL_Abstraction.dir/src/VertexBuffer.cpp.o: ../deps/glfw/include/GLFW/glfw3.h
 CMakeFiles/acGL_Abstraction.dir/src/VertexBuffer.cpp.o: ../deps/glm/glm/common.hpp
@@ -2621,6 +2627,7 @@ CMakeFiles/acGL_Abstraction.dir/src/VertexBufferLayout.cpp.o: CMakeFiles/acGL_Ab
 CMakeFiles/acGL_Abstraction.dir/src/VertexBufferLayout.cpp.o: ../include/pch.h
 CMakeFiles/acGL_Abstraction.dir/src/VertexBufferLayout.cpp.o: ../src/VertexBufferLayout.cpp
 
+<<<<<<< feature/renderer-refactory
 CMakeFiles/acGL_Abstraction.dir/src/VertexBufferRenderer.cpp.o: ../deps/glew/include/GL/glew.h
 CMakeFiles/acGL_Abstraction.dir/src/VertexBufferRenderer.cpp.o: ../deps/glfw/include/GLFW/glfw3.h
 CMakeFiles/acGL_Abstraction.dir/src/VertexBufferRenderer.cpp.o: ../deps/glm/glm/common.hpp
@@ -3051,6 +3058,8 @@ CMakeFiles/acGL_Abstraction.dir/src/VertexIndexBufferRenderer.cpp.o: CMakeFiles/
 CMakeFiles/acGL_Abstraction.dir/src/VertexIndexBufferRenderer.cpp.o: ../include/pch.h
 CMakeFiles/acGL_Abstraction.dir/src/VertexIndexBufferRenderer.cpp.o: ../src/VertexIndexBufferRenderer.cpp
 
+=======
+>>>>>>> Auto stash before rebase of "origin/develop"
 CMakeFiles/acGL_Abstraction.dir/src/Window.cpp.o: ../deps/glew/include/GL/glew.h
 CMakeFiles/acGL_Abstraction.dir/src/Window.cpp.o: ../deps/glfw/include/GLFW/glfw3.h
 CMakeFiles/acGL_Abstraction.dir/src/Window.cpp.o: ../deps/glm/glm/common.hpp
@@ -3478,7 +3487,10 @@ CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../deps/glm/glm/vec4
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../deps/glm/glm/vector_relational.hpp
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../deps/stb/stb_image.h
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../include/Buffer.h
+<<<<<<< feature/renderer-refactory
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../include/Drawable.h
+=======
+>>>>>>> Auto stash before rebase of "origin/develop"
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../include/IndexBuffer.h
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../include/Renderer.h
 CMakeFiles/acGL_Abstraction.dir/src/acGL_Abstraction.cpp.o: ../include/Shader.h

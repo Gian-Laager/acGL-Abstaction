@@ -1596,6 +1596,7 @@ arm_neon.h
 pch.h
 ../include/pch.h
 
+<<<<<<< feature/renderer-refactory
 ../include/Drawable.h
 pch.h
 ../include/pch.h
@@ -1604,6 +1605,8 @@ Renderer.h
 Window.h
 ../include/Window.h
 
+=======
+>>>>>>> Auto stash before rebase of "origin/develop"
 ../include/IndexBuffer.h
 Buffer.h
 ../include/Buffer.h
@@ -1642,12 +1645,15 @@ VertexBuffer.h
 VertexBufferLayout.h
 ../include/VertexBufferLayout.h
 
+<<<<<<< feature/renderer-refactory
 ../include/VertexArrayRenderer.h
 pch.h
 ../include/pch.h
 Renderer.h
 ../include/Renderer.h
 
+=======
+>>>>>>> Auto stash before rebase of "origin/develop"
 ../include/VertexBuffer.h
 Buffer.h
 ../include/Buffer.h
@@ -1656,10 +1662,13 @@ Buffer.h
 Shader.h
 ../include/Shader.h
 
+<<<<<<< feature/renderer-refactory
 ../include/VertexBufferRenderer.h
 
 ../include/VertexIndexBufferRenderer.h
 
+=======
+>>>>>>> Auto stash before rebase of "origin/develop"
 ../include/Window.h
 pch.h
 ../include/pch.h
@@ -1669,10 +1678,13 @@ pch.h
 ../include/pch.h
 Renderer.h
 ../include/Renderer.h
+<<<<<<< feature/renderer-refactory
 Window.h
 ../include/Window.h
 Drawable.h
 ../include/Drawable.h
+=======
+>>>>>>> Auto stash before rebase of "origin/develop"
 
 ../include/pch.h
 GL/glew.h
@@ -1713,12 +1725,15 @@ array
 -
 future
 -
+<<<<<<< feature/renderer-refactory
 memory
 -
 map
 -
 tuple
 -
+=======
+>>>>>>> Auto stash before rebase of "origin/develop"
 
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-debug/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/pch.h
@@ -1801,21 +1816,27 @@ array
 -
 future
 -
+<<<<<<< feature/renderer-refactory
 memory
 -
 map
 -
 tuple
 -
+=======
+>>>>>>> Auto stash before rebase of "origin/develop"
 
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Buffer.cpp
 Buffer.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Buffer.h
 
+<<<<<<< feature/renderer-refactory
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.cpp
 Drawable.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.h
 
+=======
+>>>>>>> Auto stash before rebase of "origin/develop"
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/IndexBuffer.cpp
 IndexBuffer.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/IndexBuffer.h
@@ -1836,10 +1857,13 @@ Texture.h
 VertexArray.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArray.h
 
+<<<<<<< feature/renderer-refactory
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp
 VertexArrayRenderer.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.h
 
+=======
+>>>>>>> Auto stash before rebase of "origin/develop"
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBuffer.cpp
 VertexBuffer.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBuffer.h
@@ -1848,6 +1872,7 @@ VertexBuffer.h
 VertexBufferLayout.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferLayout.h
 
+<<<<<<< feature/renderer-refactory
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp
 VertexBufferRenderer.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.h
@@ -1856,6 +1881,8 @@ VertexBufferRenderer.h
 VertexIndexBufferRenderer.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.h
 
+=======
+>>>>>>> Auto stash before rebase of "origin/develop"
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.cpp
 Window.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.h
@@ -1863,4 +1890,9 @@ Window.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/acGL_Abstraction.cpp
 acGL_Abstraction.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/acGL_Abstraction.h
+<<<<<<< feature/renderer-refactory
+=======
+Window.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.h
+>>>>>>> Auto stash before rebase of "origin/develop"
 
