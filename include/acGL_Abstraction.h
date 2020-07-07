@@ -5,6 +5,7 @@
 
 #include "Renderer.h"
 #include "Window.h"
+#include "Drawable.h"
 
 namespace glAbs
 {
