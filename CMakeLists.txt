@@ -29,6 +29,7 @@ set(SRC_FILES
         ${acGL_Abstraction_ROOT_DIR}/src/VertexArrayRenderer.cpp
         ${acGL_Abstraction_ROOT_DIR}/src/VertexBufferRenderer.cpp
         ${acGL_Abstraction_ROOT_DIR}/src/VertexIndexBufferRenderer.cpp
+        ${acGL_Abstraction_ROOT_DIR}/src/Drawable.cpp
 
         #Dependencies
         ${acGL_Abstraction_ROOT_DIR}/deps/stb/stb_image.cpp
@@ -48,6 +49,7 @@ set(HEAD_FILES
         ${acGL_Abstraction_ROOT_DIR}/include/Buffer.h
         ${acGL_Abstraction_ROOT_DIR}/include/Texture.h
         ${acGL_Abstraction_ROOT_DIR}/include/Window.h
+        ${acGL_Abstraction_ROOT_DIR}/include/Drawable.h
         ${acGL_Abstraction_ROOT_DIR}/include/VertexArrayRenderer.h
         ${acGL_Abstraction_ROOT_DIR}/include/VertexBufferRenderer.h
         ${acGL_Abstraction_ROOT_DIR}/include/VertexIndexBufferRenderer.h
