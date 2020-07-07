@@ -1,8 +1,0 @@
-/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-release/CMakeFiles/install/local.dir
-/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-release/CMakeFiles/install/strip.dir
-/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-release/CMakeFiles/install.dir
-/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-release/CMakeFiles/list_install_components.dir
-/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-release/CMakeFiles/rebuild_cache.dir
-/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-release/CMakeFiles/edit_cache.dir
-/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-release/CMakeFiles/basic_window.dir
-/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-release/CMakeFiles/acGL_Abstraction.dir
