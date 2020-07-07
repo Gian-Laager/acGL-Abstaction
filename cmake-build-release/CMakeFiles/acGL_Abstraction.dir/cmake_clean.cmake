@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch"
   "CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o"
   "CMakeFiles/acGL_Abstraction.dir/src/Buffer.cpp.o"
+  "CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o"
   "CMakeFiles/acGL_Abstraction.dir/src/IndexBuffer.cpp.o"
   "CMakeFiles/acGL_Abstraction.dir/src/Renderer.cpp.o"
   "CMakeFiles/acGL_Abstraction.dir/src/Shader.cpp.o"

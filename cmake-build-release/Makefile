@@ -238,6 +238,33 @@ src/Buffer.cpp.s:
 	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Buffer.cpp.s
 .PHONY : src/Buffer.cpp.s
 
+src/Drawable.o: src/Drawable.cpp.o
+
+.PHONY : src/Drawable.o
+
+# target to build an object file
+src/Drawable.cpp.o:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o
+.PHONY : src/Drawable.cpp.o
+
+src/Drawable.i: src/Drawable.cpp.i
+
+.PHONY : src/Drawable.i
+
+# target to preprocess a source file
+src/Drawable.cpp.i:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.i
+.PHONY : src/Drawable.cpp.i
+
+src/Drawable.s: src/Drawable.cpp.s
+
+.PHONY : src/Drawable.s
+
+# target to generate assembly for a file
+src/Drawable.cpp.s:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.s
+.PHONY : src/Drawable.cpp.s
+
 src/IndexBuffer.o: src/IndexBuffer.cpp.o
 
 .PHONY : src/IndexBuffer.o
@@ -503,6 +530,9 @@ help:
 	@echo "... src/Buffer.o"
 	@echo "... src/Buffer.i"
 	@echo "... src/Buffer.s"
+	@echo "... src/Drawable.o"
+	@echo "... src/Drawable.i"
+	@echo "... src/Drawable.s"
 	@echo "... src/IndexBuffer.o"
 	@echo "... src/IndexBuffer.i"
 	@echo "... src/IndexBuffer.s"

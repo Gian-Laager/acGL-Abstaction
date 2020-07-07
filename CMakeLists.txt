@@ -75,7 +75,7 @@ link_directories(
 find_package(OpenGL REQUIRED)
 
 set(LIBS
-        "${acGL_Abstraction_ROOT_DIR}/deps/glew/lib/libGLEW.dylib"
+        "${acGL_Abstraction_ROOT_DIR}/deps/glew/lib/libGLEW.a"
         "${OPENGL_LIBRARIES}"
         "${acGL_Abstraction_ROOT_DIR}/deps/glfw/src/libglfw.3.dylib"
         )
@@ -85,8 +85,8 @@ target_precompile_headers(${target} PRIVATE ${PCH_H})
 
 set_target_properties(${target} PROPERTIES DEBUG_POSTFIX _d)
 
-target_link_libraries(${target} ${LIBS})
 target_include_directories(${target} PRIVATE ${OPENGL_INCLUDE_DIR})
+target_link_libraries(${target} ${LIBS})
 
 
 set(cgex $<CONFIGURATION>)

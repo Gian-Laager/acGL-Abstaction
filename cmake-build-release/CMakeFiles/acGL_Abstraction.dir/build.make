@@ -221,11 +221,26 @@ CMakeFiles/acGL_Abstraction.dir/src/Window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/acGL_Abstraction.dir/src/Window.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-release/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch -S /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.cpp -o CMakeFiles/acGL_Abstraction.dir/src/Window.cpp.s
 
+CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: CMakeFiles/acGL_Abstraction.dir/flags.make
+CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: ../src/Drawable.cpp
+CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx
+CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o: CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-release/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch -o CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o -c /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.cpp
+
+CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-release/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch -E /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.cpp > CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.i
+
+CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-release/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch -S /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.cpp -o CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.s
+
 CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o: CMakeFiles/acGL_Abstraction.dir/flags.make
 CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o: ../deps/stb/stb_image.cpp
 CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o: CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx
 CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o: CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-release/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch -o CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o -c /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/stb/stb_image.cpp
 
 CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.i: cmake_force
@@ -248,6 +263,7 @@ acGL_Abstraction_OBJECTS = \
 "CMakeFiles/acGL_Abstraction.dir/src/Buffer.cpp.o" \
 "CMakeFiles/acGL_Abstraction.dir/src/Texture.cpp.o" \
 "CMakeFiles/acGL_Abstraction.dir/src/Window.cpp.o" \
+"CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o" \
 "CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o"
 
 # External object files for target acGL_Abstraction
@@ -264,12 +280,13 @@ libacGL_Abstraction.dylib: CMakeFiles/acGL_Abstraction.dir/src/Shader.cpp.o
 libacGL_Abstraction.dylib: CMakeFiles/acGL_Abstraction.dir/src/Buffer.cpp.o
 libacGL_Abstraction.dylib: CMakeFiles/acGL_Abstraction.dir/src/Texture.cpp.o
 libacGL_Abstraction.dylib: CMakeFiles/acGL_Abstraction.dir/src/Window.cpp.o
+libacGL_Abstraction.dylib: CMakeFiles/acGL_Abstraction.dir/src/Drawable.cpp.o
 libacGL_Abstraction.dylib: CMakeFiles/acGL_Abstraction.dir/deps/stb/stb_image.cpp.o
 libacGL_Abstraction.dylib: CMakeFiles/acGL_Abstraction.dir/build.make
-libacGL_Abstraction.dylib: ../deps/glew/lib/libGLEW.dylib
+libacGL_Abstraction.dylib: ../deps/glew/lib/libGLEW.a
 libacGL_Abstraction.dylib: ../deps/glfw/src/libglfw.3.dylib
 libacGL_Abstraction.dylib: CMakeFiles/acGL_Abstraction.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX shared library libacGL_Abstraction.dylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX shared library libacGL_Abstraction.dylib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/acGL_Abstraction.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
