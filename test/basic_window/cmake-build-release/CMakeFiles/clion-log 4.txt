@@ -1,5 +1,0 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window
--- Linked acGL_Abstraction
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-release
