@@ -48,7 +48,6 @@ namespace glAbs
 #include <cstddef>
 
 #define _USE_MATH_DEFINES
-
 #include <math.h>
 #include <algorithm>
 #include <iterator>
@@ -58,5 +57,6 @@ namespace glAbs
 #include <future>
 #include <memory>
 #include <map>
+#include <tuple>
 
 #endif //ACGL_ABSTRACTION_PCH_H
