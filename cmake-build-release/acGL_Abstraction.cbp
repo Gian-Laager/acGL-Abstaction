@@ -177,10 +177,19 @@
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/VertexArray.h">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/VertexArrayRenderer.h">
+			<Option target="acGL_Abstraction"/>
+		</Unit>
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/VertexBuffer.h">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/VertexBufferLayout.h">
+			<Option target="acGL_Abstraction"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/VertexBufferRenderer.h">
+			<Option target="acGL_Abstraction"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/VertexIndexBufferRenderer.h">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/Window.h">
@@ -210,10 +219,19 @@
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArray.cpp">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp">
+			<Option target="acGL_Abstraction"/>
+		</Unit>
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBuffer.cpp">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferLayout.cpp">
+			<Option target="acGL_Abstraction"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp">
+			<Option target="acGL_Abstraction"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.cpp">

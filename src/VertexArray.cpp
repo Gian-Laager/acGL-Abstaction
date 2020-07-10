@@ -1,10 +1,8 @@
 #include "VertexArray.h"
 
-using namespace glAbs;
+unsigned int glAbs::VertexArray::boundId = 0;
 
-unsigned int VertexArray::boundId = 0;
-
-void VertexArray::push(const IndexBuffer* buffer)
+void glAbs::VertexArray::push(const IndexBuffer* buffer)
 {
     bind();
     buffer->bind();
@@ -13,7 +11,7 @@ void VertexArray::push(const IndexBuffer* buffer)
     isIndexBuffer = true;
 }
 
-void VertexArray::bind() const
+void glAbs::VertexArray::bind() const
 {
     if (VertexArray::boundId != id)
     {
@@ -23,7 +21,7 @@ void VertexArray::bind() const
     }
 }
 
-void VertexArray::unbind() const
+void glAbs::VertexArray::unbind() const
 {
     if (boundId == id)
     {
@@ -33,13 +31,14 @@ void VertexArray::unbind() const
     }
 }
 
-void VertexArray::push(const VertexBuffer* buffer, const VertexBufferLayout layouts[], unsigned int numberOfLayouts)
+void
+glAbs::VertexArray::push(const VertexBuffer* buffer, const VertexBufferLayout layouts[], unsigned int numberOfLayouts)
 {
-    bind(false);
+    bindAndDontEnable();
     buffer->bind();
     for (int i = 0; i < numberOfLayouts; i++)
     {
-        indecies.insert(layouts[i].attribIndex);
+        indices.insert(layouts[i].attribIndex);
         glCall(glEnableVertexAttribArray(layouts[i].attribIndex));
         glCall(glVertexAttribPointer(layouts[i].attribIndex, layouts[i].numberOfElements, layouts[i].type,
                                      layouts[i].normalized, layouts[i].stride, layouts[i].memberOffset));
@@ -48,57 +47,78 @@ void VertexArray::push(const VertexBuffer* buffer, const VertexBufferLayout layo
     unbind();
 }
 
-VertexArray::VertexArray()
-{
-    glCall(glGenVertexArrays(1, &id));
-}
-
-void VertexArray::disableAll() const
+void glAbs::VertexArray::disableAll() const
 {
     std::set<unsigned int>::iterator itr;
-    for (itr = indecies.begin(); itr != indecies.end(); ++itr)
+    for (itr = indices.begin(); itr != indices.end(); ++itr)
     {
         glCall(glDisableVertexAttribArray(*itr));
     }
 }
 
-void VertexArray::enableAll() const
+void glAbs::VertexArray::enableAll() const
 {
     std::set<unsigned int>::iterator itr;
-    for (itr = indecies.begin(); itr != indecies.end(); ++itr)
+    for (itr = indices.begin(); itr != indices.end(); ++itr)
     {
         glCall(glEnableVertexAttribArray(*itr));
     }
 }
 
-void VertexArray::unbind(bool disableAll) const
+void glAbs::VertexArray::unbindAndDontDisable() const
 {
-    if (disableAll)
+    if (boundId == id)
     {
-        unbind();
-    }
-    else
-    {
-        if (boundId == id)
-        {
-            glCall(glBindVertexArray(0));
-            VertexArray::boundId = 0;
-        }
+        glCall(glBindVertexArray(0));
+        VertexArray::boundId = 0;
     }
 }
 
-void VertexArray::bind(bool enableAll) const
+void glAbs::VertexArray::bindAndDontEnable() const
 {
-    if (enableAll)
+    if (boundId != id)
     {
-        bind();
-    }
-    else
-    {
-        if (boundId != id)
-        {
-            glCall(glBindVertexArray(id));
-            VertexArray::boundId = id;
-        }
+        glCall(glBindVertexArray(id));
+        VertexArray::boundId = id;
     }
 }
+
+glAbs::VertexArray::VertexArray(unsigned int numberOfIndices) : numberOfIndices(numberOfIndices),
+                                                       id(0)
+{
+    glCall(glGenVertexArrays(1, &id));
+}
+
+glAbs::VertexArray::VertexArray(const VertexArray& va) : id(va.id),
+                                                         indices(va.indices),
+                                                         isIndexBuffer(va.isIndexBuffer),
+                                                         numberOfIndices(va.numberOfIndices) {}
+
+glAbs::VertexArray::VertexArray(VertexArray&& va) noexcept: indices(std::move(va.indices)),
+                                                            numberOfIndices(va.numberOfIndices)
+{
+    id = va.id;
+    va.id = 0;
+}
+
+glAbs::VertexArray& glAbs::VertexArray::operator=(glAbs::VertexArray&& va) noexcept
+{
+    id = va.id;
+    va.id = 0;
+    indices = std::move(va.indices);
+    isIndexBuffer = va.isIndexBuffer;
+    numberOfIndices = va.numberOfIndices;
+    return *this;
+}
+
+glAbs::VertexArray::VertexArray() : numberOfIndices(0),
+                                    id(0) {}
+
+//glAbs::VertexArray& glAbs::VertexArray::operator=(glAbs::VertexArray va) noexcept
+//{
+//    id = va.id;
+//    indices = va.indices;
+//    isIndexBuffer = va.isIndexBuffer;
+//    numberOfIndices = va.numberOfIndices;
+//    return *this;
+//}

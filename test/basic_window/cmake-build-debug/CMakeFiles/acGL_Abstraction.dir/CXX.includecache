@@ -1634,6 +1634,12 @@ VertexBuffer.h
 VertexBufferLayout.h
 ../../../include/VertexBufferLayout.h
 
+../../../include/VertexArrayRenderer.h
+pch.h
+../../../include/pch.h
+Renderer.h
+../../../include/Renderer.h
+
 ../../../include/VertexBuffer.h
 Buffer.h
 ../../../include/Buffer.h
@@ -1642,6 +1648,12 @@ Buffer.h
 Shader.h
 ../../../include/Shader.h
 
+../../../include/VertexBufferRenderer.h
+pch.h
+../../../include/pch.h
+Renderer.h
+../../../include/Renderer.h
+
 ../../../include/Window.h
 pch.h
 ../../../include/pch.h
@@ -1649,8 +1661,10 @@ pch.h
 ../../../include/acGL_Abstraction.h
 pch.h
 ../../../include/pch.h
-Renderer.h
-../../../include/Renderer.h
+VertexBufferRenderer.h
+../../../include/VertexBufferRenderer.h
+VertexArrayRenderer.h
+../../../include/VertexArrayRenderer.h
 Window.h
 ../../../include/Window.h
 

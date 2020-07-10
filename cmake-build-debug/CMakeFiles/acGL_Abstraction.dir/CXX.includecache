@@ -1596,6 +1596,17 @@ arm_neon.h
 pch.h
 ../include/pch.h
 
+<<<<<<< Updated upstream
+=======
+../include/Drawable.h
+pch.h
+../include/pch.h
+Renderer.h
+../include/Renderer.h
+Window.h
+../include/Window.h
+
+>>>>>>> Stashed changes
 ../include/IndexBuffer.h
 Buffer.h
 ../include/Buffer.h
@@ -1634,6 +1645,12 @@ VertexBuffer.h
 VertexBufferLayout.h
 ../include/VertexBufferLayout.h
 
+../include/VertexArrayRenderer.h
+pch.h
+../include/pch.h
+Renderer.h
+../include/Renderer.h
+
 ../include/VertexBuffer.h
 Buffer.h
 ../include/Buffer.h
@@ -1641,6 +1658,10 @@ Buffer.h
 ../include/VertexBufferLayout.h
 Shader.h
 ../include/Shader.h
+
+../include/VertexBufferRenderer.h
+
+../include/VertexIndexBufferRenderer.h
 
 ../include/Window.h
 pch.h
@@ -1693,6 +1714,13 @@ future
 -
 memory
 -
+<<<<<<< Updated upstream
+=======
+map
+-
+tuple
+-
+>>>>>>> Stashed changes
 
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/cmake-build-debug/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/pch.h
@@ -1777,6 +1805,13 @@ future
 -
 memory
 -
+<<<<<<< Updated upstream
+=======
+map
+-
+tuple
+-
+>>>>>>> Stashed changes
 
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Buffer.cpp
 Buffer.h
@@ -1802,6 +1837,10 @@ Texture.h
 VertexArray.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArray.h
 
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp
+VertexArrayRenderer.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.h
+
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBuffer.cpp
 VertexBuffer.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBuffer.h
@@ -1809,6 +1848,14 @@ VertexBuffer.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferLayout.cpp
 VertexBufferLayout.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferLayout.h
+
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp
+VertexBufferRenderer.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.h
+
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp
+VertexIndexBufferRenderer.h
+/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.h
 
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.cpp
 Window.h

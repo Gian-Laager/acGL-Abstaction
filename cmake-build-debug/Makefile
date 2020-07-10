@@ -373,6 +373,33 @@ src/VertexArray.cpp.s:
 	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexArray.cpp.s
 .PHONY : src/VertexArray.cpp.s
 
+src/VertexArrayRenderer.o: src/VertexArrayRenderer.cpp.o
+
+.PHONY : src/VertexArrayRenderer.o
+
+# target to build an object file
+src/VertexArrayRenderer.cpp.o:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexArrayRenderer.cpp.o
+.PHONY : src/VertexArrayRenderer.cpp.o
+
+src/VertexArrayRenderer.i: src/VertexArrayRenderer.cpp.i
+
+.PHONY : src/VertexArrayRenderer.i
+
+# target to preprocess a source file
+src/VertexArrayRenderer.cpp.i:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexArrayRenderer.cpp.i
+.PHONY : src/VertexArrayRenderer.cpp.i
+
+src/VertexArrayRenderer.s: src/VertexArrayRenderer.cpp.s
+
+.PHONY : src/VertexArrayRenderer.s
+
+# target to generate assembly for a file
+src/VertexArrayRenderer.cpp.s:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexArrayRenderer.cpp.s
+.PHONY : src/VertexArrayRenderer.cpp.s
+
 src/VertexBuffer.o: src/VertexBuffer.cpp.o
 
 .PHONY : src/VertexBuffer.o
@@ -426,6 +453,60 @@ src/VertexBufferLayout.s: src/VertexBufferLayout.cpp.s
 src/VertexBufferLayout.cpp.s:
 	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexBufferLayout.cpp.s
 .PHONY : src/VertexBufferLayout.cpp.s
+
+src/VertexBufferRenderer.o: src/VertexBufferRenderer.cpp.o
+
+.PHONY : src/VertexBufferRenderer.o
+
+# target to build an object file
+src/VertexBufferRenderer.cpp.o:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexBufferRenderer.cpp.o
+.PHONY : src/VertexBufferRenderer.cpp.o
+
+src/VertexBufferRenderer.i: src/VertexBufferRenderer.cpp.i
+
+.PHONY : src/VertexBufferRenderer.i
+
+# target to preprocess a source file
+src/VertexBufferRenderer.cpp.i:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexBufferRenderer.cpp.i
+.PHONY : src/VertexBufferRenderer.cpp.i
+
+src/VertexBufferRenderer.s: src/VertexBufferRenderer.cpp.s
+
+.PHONY : src/VertexBufferRenderer.s
+
+# target to generate assembly for a file
+src/VertexBufferRenderer.cpp.s:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexBufferRenderer.cpp.s
+.PHONY : src/VertexBufferRenderer.cpp.s
+
+src/VertexIndexBufferRenderer.o: src/VertexIndexBufferRenderer.cpp.o
+
+.PHONY : src/VertexIndexBufferRenderer.o
+
+# target to build an object file
+src/VertexIndexBufferRenderer.cpp.o:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexIndexBufferRenderer.cpp.o
+.PHONY : src/VertexIndexBufferRenderer.cpp.o
+
+src/VertexIndexBufferRenderer.i: src/VertexIndexBufferRenderer.cpp.i
+
+.PHONY : src/VertexIndexBufferRenderer.i
+
+# target to preprocess a source file
+src/VertexIndexBufferRenderer.cpp.i:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexIndexBufferRenderer.cpp.i
+.PHONY : src/VertexIndexBufferRenderer.cpp.i
+
+src/VertexIndexBufferRenderer.s: src/VertexIndexBufferRenderer.cpp.s
+
+.PHONY : src/VertexIndexBufferRenderer.s
+
+# target to generate assembly for a file
+src/VertexIndexBufferRenderer.cpp.s:
+	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/src/VertexIndexBufferRenderer.cpp.s
+.PHONY : src/VertexIndexBufferRenderer.cpp.s
 
 src/Window.o: src/Window.cpp.o
 
@@ -518,12 +599,21 @@ help:
 	@echo "... src/VertexArray.o"
 	@echo "... src/VertexArray.i"
 	@echo "... src/VertexArray.s"
+	@echo "... src/VertexArrayRenderer.o"
+	@echo "... src/VertexArrayRenderer.i"
+	@echo "... src/VertexArrayRenderer.s"
 	@echo "... src/VertexBuffer.o"
 	@echo "... src/VertexBuffer.i"
 	@echo "... src/VertexBuffer.s"
 	@echo "... src/VertexBufferLayout.o"
 	@echo "... src/VertexBufferLayout.i"
 	@echo "... src/VertexBufferLayout.s"
+	@echo "... src/VertexBufferRenderer.o"
+	@echo "... src/VertexBufferRenderer.i"
+	@echo "... src/VertexBufferRenderer.s"
+	@echo "... src/VertexIndexBufferRenderer.o"
+	@echo "... src/VertexIndexBufferRenderer.i"
+	@echo "... src/VertexIndexBufferRenderer.s"
 	@echo "... src/Window.o"
 	@echo "... src/Window.i"
 	@echo "... src/Window.s"

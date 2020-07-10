@@ -4,7 +4,7 @@ using namespace glAbs;
 
 unsigned int IndexBuffer::boundId = 0;
 
-IndexBuffer::IndexBuffer(int numberOfVertecies) : Buffer(GL_ELEMENT_ARRAY_BUFFER), numberOfVertecies(numberOfVertecies) {}
+IndexBuffer::IndexBuffer() : Buffer(GL_ELEMENT_ARRAY_BUFFER) {}
 
 void IndexBuffer::bind() const
 {
@@ -22,5 +22,10 @@ void IndexBuffer::unbind() const
         Buffer::unbind();
         IndexBuffer::boundId = 0;
     }
+}
+
+void glAbs::IndexBuffer::data(void* data, unsigned int numberOfIndices, GLenum usage)
+{
+    Buffer::data(data, numberOfIndices * sizeof(unsigned int), usage);
 }
 

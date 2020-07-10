@@ -3,7 +3,8 @@
 
 #include "pch.h"
 
-#include "Renderer.h"
+#include "VertexBufferRenderer.h"
+#include "VertexArrayRenderer.h"
 #include "Window.h"
 
 namespace glAbs

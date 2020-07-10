@@ -8,12 +8,13 @@ namespace glAbs
     {
     public:
         static unsigned int boundId;
-        int numberOfVertecies;
 
-        IndexBuffer(int numberOfVertecies);
+        IndexBuffer();
 
         void bind() const override;
 
         void unbind() const override;
+
+        void data(void* data, unsigned int numberOfIndices, GLenum usage) override;
     };
 }
