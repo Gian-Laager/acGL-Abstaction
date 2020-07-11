@@ -30,15 +30,7 @@ CXX_INCLUDES = -I/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstrac
 
 # PCH options: CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.cpp.o_OPTIONS = -Xclang;-include-pch;-Xclang;/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-debug/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch
 
-<<<<<<< feature/renderer-refactory
-# PCH options: CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp.o_OPTIONS = -Xclang;-include-pch;-Xclang;/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-debug/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch
-
-# PCH options: CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp.o_OPTIONS = -Xclang;-include-pch;-Xclang;/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-debug/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch
-
-# PCH options: CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp.o_OPTIONS = -Xclang;-include-pch;-Xclang;/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-debug/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch
-=======
 # PCH options: CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.cpp.o_OPTIONS = -Xclang;-include-pch;-Xclang;/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-debug/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch
->>>>>>> undo of the updated gitignore.
 
 # PCH options: CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/stb/stb_image.cpp.o_OPTIONS = -Xclang;-include-pch;-Xclang;/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-debug/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.pch
 

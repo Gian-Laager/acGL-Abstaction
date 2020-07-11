@@ -1596,11 +1596,8 @@ arm_neon.h
 pch.h
 ../../../include/pch.h
 
-<<<<<<< feature/renderer-refactory
-=======
 ../../../include/Drawable.h
 
->>>>>>> undo of the updated gitignore.
 ../../../include/IndexBuffer.h
 Buffer.h
 ../../../include/Buffer.h
@@ -1639,15 +1636,6 @@ VertexBuffer.h
 VertexBufferLayout.h
 ../../../include/VertexBufferLayout.h
 
-<<<<<<< feature/renderer-refactory
-../../../include/VertexArrayRenderer.h
-pch.h
-../../../include/pch.h
-Renderer.h
-../../../include/Renderer.h
-
-=======
->>>>>>> undo of the updated gitignore.
 ../../../include/VertexBuffer.h
 Buffer.h
 ../../../include/Buffer.h
@@ -1656,15 +1644,6 @@ Buffer.h
 Shader.h
 ../../../include/Shader.h
 
-<<<<<<< feature/renderer-refactory
-../../../include/VertexBufferRenderer.h
-pch.h
-../../../include/pch.h
-Renderer.h
-../../../include/Renderer.h
-
-=======
->>>>>>> undo of the updated gitignore.
 ../../../include/Window.h
 pch.h
 ../../../include/pch.h
@@ -1672,21 +1651,12 @@ pch.h
 ../../../include/acGL_Abstraction.h
 pch.h
 ../../../include/pch.h
-<<<<<<< feature/renderer-refactory
-VertexBufferRenderer.h
-../../../include/VertexBufferRenderer.h
-VertexArrayRenderer.h
-../../../include/VertexArrayRenderer.h
-Window.h
-../../../include/Window.h
-=======
 Renderer.h
 ../../../include/Renderer.h
 Window.h
 ../../../include/Window.h
 Drawable.h
 ../../../include/Drawable.h
->>>>>>> undo of the updated gitignore.
 
 ../../../include/pch.h
 GL/glew.h

@@ -236,8 +236,6 @@ Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Buffer.cp
 	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Buffer.cpp.s
 .PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Buffer.cpp.s
 
-<<<<<<< feature/renderer-refactory
-=======
 Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.o: Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.cpp.o
 
 .PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.o
@@ -265,7 +263,6 @@ Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.
 	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.cpp.s
 .PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.cpp.s
 
->>>>>>> undo of the updated gitignore.
 Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/IndexBuffer.o: Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/IndexBuffer.cpp.o
 
 .PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/IndexBuffer.o
@@ -401,36 +398,6 @@ Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArr
 	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArray.cpp.s
 .PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArray.cpp.s
 
-<<<<<<< feature/renderer-refactory
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.o: Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp.o
-
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.o
-
-# target to build an object file
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp.o:
-	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp.o
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp.o
-
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.i: Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp.i
-
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.i
-
-# target to preprocess a source file
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp.i:
-	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp.i
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp.i
-
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.s: Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp.s
-
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.s
-
-# target to generate assembly for a file
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp.s:
-	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp.s
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp.s
-
-=======
->>>>>>> undo of the updated gitignore.
 Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBuffer.o: Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBuffer.cpp.o
 
 .PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBuffer.o
@@ -485,63 +452,6 @@ Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBuf
 	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferLayout.cpp.s
 .PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferLayout.cpp.s
 
-<<<<<<< feature/renderer-refactory
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.o: Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp.o
-
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.o
-
-# target to build an object file
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp.o:
-	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp.o
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp.o
-
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.i: Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp.i
-
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.i
-
-# target to preprocess a source file
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp.i:
-	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp.i
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp.i
-
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.s: Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp.s
-
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.s
-
-# target to generate assembly for a file
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp.s:
-	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp.s
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp.s
-
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.o: Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp.o
-
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.o
-
-# target to build an object file
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp.o:
-	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp.o
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp.o
-
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.i: Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp.i
-
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.i
-
-# target to preprocess a source file
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp.i:
-	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp.i
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp.i
-
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.s: Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp.s
-
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.s
-
-# target to generate assembly for a file
-Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp.s:
-	$(MAKE) -f CMakeFiles/acGL_Abstraction.dir/build.make CMakeFiles/acGL_Abstraction.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp.s
-.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp.s
-
-=======
->>>>>>> undo of the updated gitignore.
 Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.o: Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.cpp.o
 
 .PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.o
@@ -658,12 +568,9 @@ help:
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Buffer.o"
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Buffer.i"
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Buffer.s"
-<<<<<<< feature/renderer-refactory
-=======
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.o"
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.i"
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.s"
->>>>>>> undo of the updated gitignore.
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/IndexBuffer.o"
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/IndexBuffer.i"
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/IndexBuffer.s"
@@ -679,27 +586,12 @@ help:
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArray.o"
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArray.i"
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArray.s"
-<<<<<<< feature/renderer-refactory
-	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.o"
-	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.i"
-	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.s"
-=======
->>>>>>> undo of the updated gitignore.
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBuffer.o"
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBuffer.i"
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBuffer.s"
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferLayout.o"
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferLayout.i"
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferLayout.s"
-<<<<<<< feature/renderer-refactory
-	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.o"
-	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.i"
-	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.s"
-	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.o"
-	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.i"
-	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.s"
-=======
->>>>>>> undo of the updated gitignore.
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.o"
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.i"
 	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.s"

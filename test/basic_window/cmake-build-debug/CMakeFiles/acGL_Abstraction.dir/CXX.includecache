@@ -1592,8 +1592,6 @@ intrin.h
 arm_neon.h
 -
 
-<<<<<<< feature/renderer-refactory
-=======
 ../../../include/Buffer.h
 pch.h
 ../../../include/pch.h
@@ -1646,13 +1644,10 @@ Buffer.h
 Shader.h
 ../../../include/Shader.h
 
->>>>>>> undo of the updated gitignore.
 ../../../include/Window.h
 pch.h
 ../../../include/pch.h
 
-<<<<<<< feature/renderer-refactory
-=======
 ../../../include/acGL_Abstraction.h
 pch.h
 ../../../include/pch.h
@@ -1663,7 +1658,6 @@ Window.h
 Drawable.h
 ../../../include/Drawable.h
 
->>>>>>> undo of the updated gitignore.
 ../../../include/pch.h
 GL/glew.h
 ../../../include/GL/glew.h
@@ -1708,8 +1702,6 @@ memory
 map
 -
 
-<<<<<<< feature/renderer-refactory
-=======
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/stb/stb_image.cpp
 stb_image.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/deps/stb/stb_image.h
@@ -1782,18 +1774,14 @@ VertexBuffer.h
 VertexBufferLayout.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferLayout.h
 
->>>>>>> undo of the updated gitignore.
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.cpp
 Window.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.h
 
-<<<<<<< feature/renderer-refactory
-=======
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/acGL_Abstraction.cpp
 acGL_Abstraction.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/acGL_Abstraction.h
 
->>>>>>> undo of the updated gitignore.
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/../../include/pch.h
 GL/glew.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/GL/glew.h
@@ -1842,8 +1830,5 @@ map
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/../../include/pch.h
 -
 
-<<<<<<< feature/renderer-refactory
-=======
 /Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-debug/CMakeFiles/acGL_Abstraction.dir/cmake_pch.hxx.cxx
 
->>>>>>> undo of the updated gitignore.

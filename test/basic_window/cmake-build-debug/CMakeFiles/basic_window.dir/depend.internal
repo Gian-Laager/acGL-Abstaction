@@ -213,24 +213,14 @@ CMakeFiles/basic_window.dir/basic_window.cpp.o
  ../../../deps/glm/glm/vector_relational.hpp
  ../../../deps/stb/stb_image.h
  ../../../include/Buffer.h
-<<<<<<< feature/renderer-refactory
-=======
  ../../../include/Drawable.h
->>>>>>> undo of the updated gitignore.
  ../../../include/IndexBuffer.h
  ../../../include/Renderer.h
  ../../../include/Shader.h
  ../../../include/Texture.h
  ../../../include/VertexArray.h
-<<<<<<< feature/renderer-refactory
- ../../../include/VertexArrayRenderer.h
  ../../../include/VertexBuffer.h
  ../../../include/VertexBufferLayout.h
- ../../../include/VertexBufferRenderer.h
-=======
- ../../../include/VertexBuffer.h
- ../../../include/VertexBufferLayout.h
->>>>>>> undo of the updated gitignore.
  ../../../include/Window.h
  ../../../include/acGL_Abstraction.h
  ../../../include/pch.h
