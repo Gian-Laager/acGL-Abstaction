@@ -1,7 +1,5 @@
 #include "Renderer.h"
 
-using namespace glAbs;
-
 //Renderer::Renderer(VertexArray* vao, Shader* shader) : shader(shader), vao(vao), drawMode(DrawMode::VERTEX_ARRAY) {}
 //
 //
@@ -236,6 +234,6 @@ using namespace glAbs;
 //    }
 //}
 
-RenderSettings::RenderSettings(unsigned int numberOfIndices) : numberOfIndices(numberOfIndices) {}
+glAbs::RenderSettings::RenderSettings(unsigned int numberOfIndices) : numberOfIndices(numberOfIndices) {}
 
-Renderer::Renderer(Shader* shader, RenderSettings* settings) : shader(shader), settings(settings) {}
+glAbs::Renderer::Renderer(Shader* shader, RenderSettings* settings) : shader(shader), settings(settings) {}

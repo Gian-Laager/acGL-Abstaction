@@ -38,10 +38,7 @@ glAbs::VertexArray::push(const VertexBuffer* buffer, const VertexBufferLayout la
     buffer->bind();
     for (int i = 0; i < numberOfLayouts; i++)
     {
-        indices.insert(layouts[i].attribIndex);
-        glCall(glEnableVertexAttribArray(layouts[i].attribIndex));
-        glCall(glVertexAttribPointer(layouts[i].attribIndex, layouts[i].numberOfElements, layouts[i].type,
-                                     layouts[i].normalized, layouts[i].stride, layouts[i].memberOffset));
+        addVertexAttrib(layouts[i]);
     }
     buffer->unbind();
     unbind();
@@ -113,6 +110,14 @@ glAbs::VertexArray& glAbs::VertexArray::operator=(glAbs::VertexArray&& va) noexc
 
 glAbs::VertexArray::VertexArray() : numberOfIndices(0),
                                     id(0) {}
+
+void glAbs::VertexArray::addVertexAttrib(const VertexBufferLayout& layout)
+{
+    indices.insert(layout.attribIndex);
+    glCall(glEnableVertexAttribArray(layout.attribIndex));
+    glCall(glVertexAttribPointer(layout.attribIndex, layout.numberOfElements, layout.type,
+                                 layout.normalized, layout.stride, layout.memberOffset));
+}
 
 //glAbs::VertexArray& glAbs::VertexArray::operator=(glAbs::VertexArray va) noexcept
 //{

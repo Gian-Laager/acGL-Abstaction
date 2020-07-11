@@ -21,6 +21,9 @@ namespace glAbs
 
     class VertexBufferRenderer : public Renderer
     {
+    private:
+        void createNewTemp_va(VertexBuffer* vertexBuffer) const;
+
     protected:
         void unbind() const override;
 

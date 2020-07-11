@@ -4,9 +4,10 @@
 
 #include "VertexBufferRenderer.h"
 
-glAbs::VertexBufferRenderSettings::VertexBufferRenderSettings(glAbs::VertexBufferLayout* layouts, unsigned int numberOfLayouts,
+glAbs::VertexBufferRenderSettings::VertexBufferRenderSettings(glAbs::VertexBufferLayout* layouts,
+                                                              unsigned int numberOfLayouts,
                                                               unsigned int numberOfIndices) : RenderSettings(
-        numberOfIndices),
+                                                                                                      numberOfIndices),
                                                                                               layouts(layouts),
                                                                                               numberOfLayouts(
                                                                                                       numberOfLayouts) {}
@@ -22,8 +23,8 @@ void glAbs::VertexBufferRenderer::bind() const
 //                                     settings->layouts[i].normalized, settings->layouts[i].stride,
 //                                     settings->layouts[i].memberOffset));
 //    }
-    temp_va = VertexArray(settings->numberOfIndices);
-    temp_va.push(vertexBuffer, settings->layouts, settings->numberOfLayouts);
+
+    createNewTemp_va(vertexBuffer);
     temp_va.bind();
     shader->bind();
     vertexBuffer->bind();
@@ -53,3 +54,9 @@ glAbs::VertexBufferRenderer::VertexBufferRenderer(glAbs::VertexBuffer* vertexBuf
                                                                                                  vertexBuffer(
                                                                                                          vertexBuffer),
                                                                                                  settings(settings) {}
+
+void glAbs::VertexBufferRenderer::createNewTemp_va(glAbs::VertexBuffer* vertexBuffer) const
+{
+    temp_va = VertexArray(settings->numberOfIndices);
+    temp_va.push(vertexBuffer, settings->layouts, settings->numberOfLayouts);
+}

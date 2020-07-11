@@ -1,12 +1,10 @@
 #include "IndexBuffer.h"
 
-using namespace glAbs;
+unsigned int glAbs::IndexBuffer::boundId = 0;
 
-unsigned int IndexBuffer::boundId = 0;
+glAbs::IndexBuffer::IndexBuffer() : Buffer(GL_ELEMENT_ARRAY_BUFFER) {}
 
-IndexBuffer::IndexBuffer() : Buffer(GL_ELEMENT_ARRAY_BUFFER) {}
-
-void IndexBuffer::bind() const
+void glAbs::IndexBuffer::bind() const
 {
     if (IndexBuffer::boundId != id)
     {
@@ -15,7 +13,7 @@ void IndexBuffer::bind() const
     }
 }
 
-void IndexBuffer::unbind() const
+void glAbs::IndexBuffer::unbind() const
 {
     if (IndexBuffer::boundId == id)
     {

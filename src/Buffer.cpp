@@ -16,12 +16,12 @@ void Buffer::data(void* data, unsigned int size, GLenum usage)
 
 void Buffer::bind() const
 {
-        glCall(glBindBuffer(target, id));
+    glCall(glBindBuffer(target, id));
 }
 
 void Buffer::unbind() const
 {
-        glCall(glBindBuffer(target, 0));
+    glCall(glBindBuffer(target, 0));
 }
 
 Buffer::~Buffer()

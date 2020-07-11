@@ -9,8 +9,6 @@
 
 namespace glAbs
 {
-    MainWindow* mainWindow;
-
     bool glfwInitialized = false;
     bool glewInitialized = false;
 

@@ -10,6 +10,8 @@ namespace glAbs
 {
     class VertexArray
     {
+    private:
+        void addVertexAttrib(const VertexBufferLayout& layout);
     public:
         unsigned int id;
 

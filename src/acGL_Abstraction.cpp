@@ -38,7 +38,7 @@ void glAbs::hello_GL()
     glfwWindowSettings settings;
 //    settings.runMainLoopInParallel = true;
 
-    mainWindow->setup = [&] {
+    glAbs::MainWindow::getInstance()->setup = [&] {
         const char* versionGL;
         glCall(versionGL = (char*) (glGetString(GL_VERSION)));
         std::cout << "openGl version: " << versionGL << std::endl;
@@ -63,13 +63,13 @@ void glAbs::hello_GL()
         vertexArray.push(&indexBuffer);
     };
 
-    mainWindow->mainloop = [&renderer] {
+    glAbs::MainWindow::getInstance()->mainloop = [&renderer] {
         renderer.draw();
     };
 
-    mainWindow->runMainLoop();
+    glAbs::MainWindow::getInstance()->runMainLoop();
 
-    mainWindow->getMainLoopFuture()->wait();
+    glAbs::MainWindow::getInstance()->getMainLoopFuture()->wait();
 }
 
 glAbs::Destroyer::~Destroyer()
@@ -91,13 +91,6 @@ static void initGlfw()
     }
 }
 
-static void setupWindowHints()
-{
-    //TODO: get this function to work
-    for (auto& windowHint : glAbs::MainWindowSettings::getInstance()->windowHints)
-        glfwWindowHint(windowHint.hint, *windowHint.value);
-}
-
 static void initGlew()
 {
     if (!glAbs::glewInitialized)
@@ -105,20 +98,20 @@ static void initGlew()
         glewExperimental = true;
         if (GLEW_OK != glewInit())
             throw "Failed to initialize glew";
+        glAbs::glewInitialized = true;
     }
-
 }
 
 glAbs::Destroyer glAbs::init()
 {
     initGlfw();
 
-    for (auto& windowHint : glAbs::MainWindowSettings::getInstance()->windowHints)
-        glfwWindowHint(windowHint.hint, *windowHint.value);
+//    setMainWindowHints();
 
-    mainWindow = glAbs::MainWindow::getInstance();
+    glAbs::MainWindow::getInstance();
 
     initGlew();
 
     return glAbs::Destroyer(); //when the main function ends the destructor of Destroyer gets called and glfw get terminated
 }
+
