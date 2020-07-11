@@ -8,6 +8,7 @@
 #include "VertexBuffer.h"
 #include "VertexBufferLayout.h"
 #include "Texture.h"
+#include "Window.h"
 
 
 namespace glAbs
@@ -17,7 +18,7 @@ namespace glAbs
         RenderSettings(unsigned int numberOfIndices);
         unsigned int numberOfIndices;
         GLenum drawMode = GL_TRIANGLES;
-        void* offset = nullptr;
+        void* offset = nullptr
     };
 
     class Renderer

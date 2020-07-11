@@ -208,12 +208,9 @@
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/Buffer.h">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
-<<<<<<< feature/renderer-refactory
-=======
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/Drawable.h">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
->>>>>>> undo of the updated gitignore.
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/IndexBuffer.h">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
@@ -229,27 +226,21 @@
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/VertexArray.h">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
-<<<<<<< feature/renderer-refactory
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/VertexArrayRenderer.h">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
-=======
->>>>>>> undo of the updated gitignore.
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/VertexBuffer.h">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/VertexBufferLayout.h">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
-<<<<<<< feature/renderer-refactory
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/VertexBufferRenderer.h">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/VertexIndexBufferRenderer.h">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
-=======
->>>>>>> undo of the updated gitignore.
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/include/Window.h">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
@@ -262,12 +253,9 @@
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Buffer.cpp">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
-<<<<<<< feature/renderer-refactory
-=======
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Drawable.cpp">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
->>>>>>> undo of the updated gitignore.
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/IndexBuffer.cpp">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
@@ -283,27 +271,21 @@
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArray.cpp">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
-<<<<<<< feature/renderer-refactory
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexArrayRenderer.cpp">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
-=======
->>>>>>> undo of the updated gitignore.
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBuffer.cpp">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferLayout.cpp">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
-<<<<<<< feature/renderer-refactory
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexBufferRenderer.cpp">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/VertexIndexBufferRenderer.cpp">
 			<Option target="acGL_Abstraction"/>
 		</Unit>
-=======
->>>>>>> undo of the updated gitignore.
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/src/Window.cpp">
 			<Option target="acGL_Abstraction"/>
 		</Unit>

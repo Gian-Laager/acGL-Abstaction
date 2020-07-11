@@ -11,26 +11,25 @@ namespace glAbs
     template <typename Vertex>
     class Drawable
     {
-    protected:
+    private:
         int numberOfVertices;
+        int numberOfIndices;
+        Vertex* vertices;
+        unsigned int* indices;
+
+        bool isRendererSetup = false;
 
     public:
-        const Vertex* vertices;
         const Window* window = MainWindow::getInstance();
         const Renderer* renderer;
 
-        Drawable(Vertex* vertices, const Renderer* renderer);
-
-        template<int numberOfVertices>
-        Drawable(std::array<Vertex, numberOfVertices> vertices, const Renderer* renderer);
+        template<int numberOfVertices, int numberOfIndices>
+        Drawable(Vertex[numberOfVertices] vertices, unsigned int[numberOfIndices] indices, Renderer* renderer);
 
         int getNumberOfVertices();
 
         virtual void draw();
     };
-
-    template <typename Vertex>
-    std::tuple<VertexBuffer, IndexBuffer> createBuffers(Vertex* vertices, int numberOfVertices);
 }
 
 
