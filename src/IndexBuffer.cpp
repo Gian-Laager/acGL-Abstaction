@@ -1,12 +1,10 @@
 #include "IndexBuffer.h"
 
-using namespace glAbs;
+unsigned int glAbs::IndexBuffer::boundId = 0;
 
-unsigned int IndexBuffer::boundId = 0;
+glAbs::IndexBuffer::IndexBuffer() : Buffer(GL_ELEMENT_ARRAY_BUFFER) {}
 
-IndexBuffer::IndexBuffer(int numberOfVertecies) : Buffer(GL_ELEMENT_ARRAY_BUFFER), numberOfVertecies(numberOfVertecies) {}
-
-void IndexBuffer::bind() const
+void glAbs::IndexBuffer::bind() const
 {
     if (IndexBuffer::boundId != id)
     {
@@ -15,12 +13,17 @@ void IndexBuffer::bind() const
     }
 }
 
-void IndexBuffer::unbind() const
+void glAbs::IndexBuffer::unbind() const
 {
     if (IndexBuffer::boundId == id)
     {
         Buffer::unbind();
         IndexBuffer::boundId = 0;
     }
+}
+
+void glAbs::IndexBuffer::data(void* data, unsigned int numberOfIndices, GLenum usage)
+{
+    Buffer::data(data, numberOfIndices * sizeof(unsigned int), usage);
 }
 

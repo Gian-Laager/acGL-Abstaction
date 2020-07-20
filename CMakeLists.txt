@@ -26,6 +26,9 @@ set(SRC_FILES
         ${acGL_Abstraction_ROOT_DIR}/src/Buffer.cpp
         ${acGL_Abstraction_ROOT_DIR}/src/Texture.cpp
         ${acGL_Abstraction_ROOT_DIR}/src/Window.cpp
+        ${acGL_Abstraction_ROOT_DIR}/src/VertexArrayRenderer.cpp
+        ${acGL_Abstraction_ROOT_DIR}/src/VertexBufferRenderer.cpp
+        ${acGL_Abstraction_ROOT_DIR}/src/VertexIndexBufferRenderer.cpp
 
         #Dependencies
         ${acGL_Abstraction_ROOT_DIR}/deps/stb/stb_image.cpp
@@ -45,6 +48,9 @@ set(HEAD_FILES
         ${acGL_Abstraction_ROOT_DIR}/include/Buffer.h
         ${acGL_Abstraction_ROOT_DIR}/include/Texture.h
         ${acGL_Abstraction_ROOT_DIR}/include/Window.h
+        ${acGL_Abstraction_ROOT_DIR}/include/VertexArrayRenderer.h
+        ${acGL_Abstraction_ROOT_DIR}/include/VertexBufferRenderer.h
+        ${acGL_Abstraction_ROOT_DIR}/include/VertexIndexBufferRenderer.h
 
         #Dependencies
         ${acGL_Abstraction_ROOT_DIR}/deps/stb/stb_image.h
@@ -73,7 +79,7 @@ link_directories(
 find_package(OpenGL REQUIRED)
 
 set(LIBS
-        "${acGL_Abstraction_ROOT_DIR}/deps/glew/lib/libGLEW.dylib"
+        "${acGL_Abstraction_ROOT_DIR}/deps/glew/lib/libGLEW.a"
         "${OPENGL_LIBRARIES}"
         "${acGL_Abstraction_ROOT_DIR}/deps/glfw/src/libglfw.3.dylib"
         )

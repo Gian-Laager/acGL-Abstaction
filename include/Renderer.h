@@ -12,45 +12,33 @@
 
 namespace glAbs
 {
-    enum DrawMode
+    struct RenderSettings
     {
-        VERTEX_ARRAY, VERTEX_BUFFER, VERTEX_AND_INDEX_BUFFER
+        RenderSettings(unsigned int numberOfIndices);
+        unsigned int numberOfIndices;
+        GLenum drawMode = GL_TRIANGLES;
+        void* offset = nullptr;
     };
 
     class Renderer
     {
-    private:
-        DrawMode drawMode;
+    protected:
+        Renderer(Shader* shader, RenderSettings* settings);
+        virtual void bind() const = 0;
+        virtual void unbind() const = 0;
+
     public:
-        VertexArray* vao = nullptr;
         Shader* shader = nullptr;
-        IndexBuffer* ibo = nullptr;
-        VertexBuffer* vbo = nullptr;
-        VertexBufferLayout* layouts = nullptr;
-        unsigned int numberOfLayouts = 0;
+        RenderSettings* settings;
 
-        Renderer(VertexArray* vao, Shader* shader);
+//        Renderer(VertexArray* vao, Shader* shader); VertexArrayRenderer
+//
+//        Renderer(VertexBuffer* vbo, IndexBuffer* ibo, VertexBufferLayout* layouts, unsigned int numberOfLayouts,
+//                 Shader* shader); VertexIndexBufferRenderer
+//
+//        Renderer(VertexBuffer* vbo, VertexBufferLayout* layouts, unsigned int numberOfLayouts,
+//                 Shader* shader); VertexBufferRenderer
 
-        Renderer(VertexBuffer* vbo, IndexBuffer* ibo, VertexBufferLayout* layouts, unsigned int numberOfLayouts,
-                 Shader* shader);
-
-        Renderer(VertexBuffer* vbo, VertexBufferLayout* layouts, unsigned int numberOfLayouts,
-                 Shader* shader);
-
-        void draw(int numberOfVertecies);
-
-        void draw();
-
-        void draw(void* offset);
-
-        void draw(int numberOfVertecies, void* offset);
-
-        void draw(unsigned int numberOfVertecies, GLenum mode);
-
-        void draw(GLenum mode);
-
-        void draw(void* offset, GLenum mode);
-
-        void draw(int numberOfVertecies, void* offset, GLenum mode);
+        virtual void draw() const = 0;
     };
 }

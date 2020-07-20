@@ -80,7 +80,7 @@ basic_window_EXTERNAL_OBJECTS =
 basic_window_d: CMakeFiles/basic_window.dir/basic_window.cpp.o
 basic_window_d: CMakeFiles/basic_window.dir/build.make
 basic_window_d: libacGL_Abstraction_d.dylib
-basic_window_d: ../../../deps/glew/lib/libGLEW.dylib
+basic_window_d: ../../../deps/glew/lib/libGLEW.a
 basic_window_d: ../../../deps/glfw/src/libglfw.3.dylib
 basic_window_d: CMakeFiles/basic_window.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acGL-Abstraction/test/basic_window/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable basic_window_d"

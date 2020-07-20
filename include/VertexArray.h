@@ -10,16 +10,22 @@ namespace glAbs
 {
     class VertexArray
     {
+    private:
+        void addVertexAttrib(const VertexBufferLayout& layout);
     public:
         unsigned int id;
 
         static unsigned int boundId;
 
-        std::set<unsigned int> indecies;
+        std::set<unsigned int> indices;
 
         bool isIndexBuffer = false;
 
+        unsigned int numberOfIndices;
+
         VertexArray();
+
+        VertexArray(unsigned int numberOfIndices);
 
         void push(const IndexBuffer* buffer);
 
@@ -29,11 +35,17 @@ namespace glAbs
 
         void unbind() const;
 
-        void bind(bool enableAll) const;
+        void bindAndDontEnable() const;
 
-        void unbind(bool disableAll) const;
+        void unbindAndDontDisable() const;
 
-        virtual VertexArray operator=(const VertexArray&) = delete;
+        VertexArray(const VertexArray& va);
+
+        VertexArray(VertexArray&& va) noexcept;
+
+        VertexArray& operator=(VertexArray&& va) noexcept;
+
+//        VertexArray& operator=(VertexArray va) noexcept;
 
     private:
         void disableAll() const;

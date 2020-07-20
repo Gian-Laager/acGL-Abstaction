@@ -18,6 +18,7 @@ bool glAbs::GLErrorHandling::logCall(const char* function, const char* file, int
     return true;
 }
 
+///Hello world with this Library (see in path/to/acGL-Abstraction/test/basic_window/basic_window.cpp for the full code)
 void glAbs::hello_GL()
 {
     struct Vertex
@@ -25,35 +26,50 @@ void glAbs::hello_GL()
         float x, y;
     };
 
+    VertexArray vertexArray(6);
+    IndexBuffer indexBuffer;
     Shader shader("../../../res/shaders/basic2dShader.glsl");
     VertexBufferLayout positionLayout(0, 2, GL_FLOAT, false, sizeof(Vertex), nullptr);;
+    RenderSettings renderSettings(vertexArray.numberOfIndices);
+//    renderSettings.drawMode = GL_LINES;
     VertexBuffer vertexBuffer;
-    Renderer renderer(&vertexBuffer, &positionLayout, 1, &shader);
+    VertexArrayRenderer renderer(&vertexArray, &shader, &renderSettings);
 
     glfwWindowSettings settings;
 //    settings.runMainLoopInParallel = true;
 
-    mainWindow->setup = [&] {
+    glAbs::MainWindow::getInstance()->setup = [&] {
         const char* versionGL;
         glCall(versionGL = (char*) (glGetString(GL_VERSION)));
         std::cout << "openGl version: " << versionGL << std::endl;
 
         Vertex vb_data[] = {
-                Vertex{0.5f, -0.5f},
                 Vertex{-0.5f, -0.5f},
-                Vertex{0.0f, 0.5f}
+                Vertex{-0.5f, 0.5f},
+                Vertex{0.5f, 0.5f},
+                Vertex{0.5, -0.5}
         };
 
-        vertexBuffer.data(vb_data, sizeof(Vertex) * 3, GL_STATIC_DRAW);
+        unsigned int indices[] = {
+                0, 1, 2,
+                0, 2, 3
+        };
+
+        vertexBuffer.data(vb_data, sizeof(Vertex) * vertexArray.numberOfIndices, GL_STATIC_DRAW);
+
+        indexBuffer.data(indices, vertexArray.numberOfIndices, GL_STATIC_DRAW);
+
+        vertexArray.push(&vertexBuffer, &positionLayout, 1);
+        vertexArray.push(&indexBuffer);
     };
 
-    mainWindow->mainloop = [&renderer] {
-        renderer.draw(3);
+    glAbs::MainWindow::getInstance()->mainloop = [&renderer] {
+        renderer.draw();
     };
 
-    mainWindow->runMainLoop();
+    glAbs::MainWindow::getInstance()->runMainLoop();
 
-    mainWindow->getMainLoopFuture()->wait();
+    glAbs::MainWindow::getInstance()->getMainLoopFuture()->wait();
 }
 
 glAbs::Destroyer::~Destroyer()
@@ -65,7 +81,7 @@ glAbs::Destroyer::~Destroyer()
     glAbs::MainWindow::instance = nullptr;
 }
 
-glAbs::Destroyer glAbs::init()
+static void initGlfw()
 {
     if (!glAbs::glfwInitialized)
     {
@@ -73,19 +89,29 @@ glAbs::Destroyer glAbs::init()
             throw "Failed to initialize GLFW";
         glAbs::glfwInitialized = true;
     }
+}
 
-    for (auto& windowHint : glAbs::MainWindowSettings::getInstance()->windowHints)
-        glfwWindowHint(windowHint.hint, *windowHint.value);
-
-    mainWindow = glAbs::MainWindow::getInstance();
-
-
+static void initGlew()
+{
     if (!glAbs::glewInitialized)
     {
         glewExperimental = true;
         if (GLEW_OK != glewInit())
             throw "Failed to initialize glew";
+        glAbs::glewInitialized = true;
     }
+}
+
+glAbs::Destroyer glAbs::init()
+{
+    initGlfw();
+
+//    setMainWindowHints();
+
+    glAbs::MainWindow::getInstance();
+
+    initGlew();
 
     return glAbs::Destroyer(); //when the main function ends the destructor of Destroyer gets called and glfw get terminated
 }
+

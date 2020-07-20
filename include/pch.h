@@ -22,6 +22,8 @@ namespace glAbs
     {
         ~Destroyer();
     };
+
+    void setMainWindowHints();
 }
 
 ////macros

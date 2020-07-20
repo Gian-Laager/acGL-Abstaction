@@ -218,8 +218,10 @@ CMakeFiles/basic_window.dir/basic_window.cpp.o
  ../../../include/Shader.h
  ../../../include/Texture.h
  ../../../include/VertexArray.h
+ ../../../include/VertexArrayRenderer.h
  ../../../include/VertexBuffer.h
  ../../../include/VertexBufferLayout.h
+ ../../../include/VertexBufferRenderer.h
  ../../../include/Window.h
  ../../../include/acGL_Abstraction.h
  ../../../include/pch.h
